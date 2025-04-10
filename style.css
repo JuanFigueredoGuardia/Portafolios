@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Nunito:ital,wght@0,200..1000;1,200..
+1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;
+0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,
+900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Base Styles */
 *{
@@ -268,6 +271,87 @@ section.active{
     height: 100%; /* Adjusted to cover the entire container */
     object-fit: cover;
     mix-blend-mode: lighten;
+}
+
+/* Sobre Mi Section Styles (Sin foto y sin botón Leer Más) */
+.sobre-mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Para centrar el contenido inicialmente */
+    padding-bottom: 8rem;
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+    transition: opacity 0.8s ease-in-out 0.7s, transform 0.8s ease-in-out 0.7s;
+}
+
+section.loaded .sobre-mi {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.sobre-mi-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Espacio entre la imagen y el contenido (aunque ahora no haya imagen) */
+    max-width: 70rem; /* Limitar el ancho del contenedor */
+    margin-top: 4rem;
+    text-align: center; /* Centrar el texto al no haber imagen al lado */
+}
+
+.sobre-mi-content{
+    width: 100%; /* El contenido ocupa todo el ancho al no haber imagen */
+}
+
+.sobre-mi-content h3{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.sobre-mi-content p{
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.info-personal{
+    margin-top: 2rem;
+}
+
+.info-personal p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.info-personal strong{
+    font-weight: 700;
+    color: var(--main-color);
+    margin-right: .5rem;
+}
+
+/* Responsive Styles para Sobre Mi (Ajustado sin imagen) */
+@media (max-width: 768px) {
+    .sobre-mi-container{
+        flex-direction: column; /* Apilar el contenido en pantallas pequeñas */
+        text-align: center;
+    }
+}
+
+/* Responsive Styles para Sobre Mi */
+@media (max-width: 768px) {
+    .sobre-mi-container{
+        flex-direction: column; /* Apilar imagen y texto en pantallas más pequeñas */
+        text-align: center;
+    }
+    .sobre-mi-img{
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+    .sobre-mi-content{
+        width: 100%;
+    }
 }
 
 /* Services Section Styles */
