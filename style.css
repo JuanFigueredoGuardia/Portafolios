@@ -441,6 +441,54 @@ section.loaded .sobre-mi {
     text-align: left; /* Align text to the left within the box */
 }
 
+.diseños{
+    flex: 1; /* Para que ocupe el espacio vertical disponible */
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+
+.diseños-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); /* Ajusta el ancho mínimo según necesites */
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.diseño-item {
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.diseño-item:hover {
+    transform: scale(1.05);
+}
+
+.diseño-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.diseño-item a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.diseño-item a:hover {
+    background-color: #69d136; /* Un tono ligeramente más claro al hacer hover */
+}
+
 /* Contact Section Styles */
 .contact{
     display: flex;
