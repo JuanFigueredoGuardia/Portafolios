@@ -736,3 +736,50 @@ section.loaded .sobre-mi {
 .pricing-box ul li strong {
     color: var(--main-color);
 }
+.poster-item .long-text {
+    display: none;
+    font-size: 0.9rem;
+    color: #444;
+    padding: 0.5rem;
+}
+
+.poster-item.expanded .long-text {
+    display: block;
+}
+
+.poster-item {
+    text-align: center;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    color: #000;
+}
+
+.poster-item:hover {
+    transform: scale(1.05);
+}
+
+.poster-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+}
+
+.poster-item h3 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.poster-item p {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 0 0.5rem 0.5rem;
+}
