@@ -124,19 +124,18 @@ section.active{
     margin-top: -1rem;
 }
 
-.home-detail h2 span{
+.home-detail h2 span {
     position: relative;
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .07rem var(--main-color);
-    animation: display-text 16s linear infinite;
+    animation: display-text 28s linear infinite; /* ← Cambiar duración */
     animation-delay: calc(-4s * var(--i));
 }
 
-@keyframes display-text{
-    25%,100%{
-        display: none;
-    }
+@keyframes display-text {
+    0%, 14.28% { display: inline; }
+    14.29%, 100% { display: none; }
 }
 
 .home-detail h2 span::before{
@@ -783,3 +782,54 @@ section.loaded .sobre-mi {
     color: #555;
     padding: 0 0.5rem 0.5rem;
 }
+
+.formacion {
+    padding: 8rem 9% 5rem;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.formacion-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.formacion-box {
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: .4s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.formacion-box:hover {
+    transform: scale(1.03);
+    border: 1px solid var(--main-color);
+}
+
+.formacion-box img {
+    width: 100%;
+    height: auto;
+    border-radius: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+.formacion-box h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.formacion-box p {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.formacion-box .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+}
+
