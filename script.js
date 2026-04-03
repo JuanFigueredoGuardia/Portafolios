@@ -1,17 +1,9 @@
 // === VARIABLES GLOBALES ===
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.nav-menu');
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('.nav-menu a');
-let header = document.querySelector('header');
-
-let homeDetail = document.querySelector('.home-detail');
-let homeImgBox = document.querySelector('.home-img .img-box');
-let sobreMiSection = document.querySelector('.sobre-mi');
-let sobreMiContent = document.querySelector('.sobre-mi-content');
-let servicesContainer = document.querySelector('.services-container');
-let contactSection = document.querySelector('.contact');
-let headingElements = document.querySelectorAll('.heading');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.nav-menu');
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-menu a');
+const header = document.querySelector('.header');
 
 // === MENÚ RESPONSIVO ===
 menuIcon.onclick = () => {
@@ -19,18 +11,23 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-// === EFECTO SCROLL PARA ACTIVAR LINKS ===
+// === EFECTO SCROLL PARA ACTIVAR LINKS Y HEADER STICKY ===
 window.onscroll = () => {
-    let top = window.scrollY;
+    const top = window.scrollY;
 
+    // Sticky Header
+    header.classList.toggle('sticky', top > 100);
+
+    // Active Link Highlight
     sections.forEach(sec => {
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+        const offset = sec.offsetTop - 150;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
             navLinks.forEach(link => link.classList.remove('active'));
-            document.querySelector(`.nav-menu a[href*="${id}"]`).classList.add('active');
+            const activeLink = document.querySelector(`.nav-menu a[href*="${id}"]`);
+            if (activeLink) activeLink.classList.add('active');
         }
     });
 
@@ -39,86 +36,23 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-// === ANIMACIÓN DE CARGA ===
+// === ANIMACIÓN DE CARGA (OPCIONAL/SUTIL) ===
 window.onload = () => {
-    // Animar header
-    setTimeout(() => {
-        if (header) {
-            header.style.opacity = '1';
-            header.style.transform = 'translateY(0)';
-        }
-    }, 100);
-
-    // Animar sección Home
-    setTimeout(() => {
-        if (homeDetail) {
-            homeDetail.style.opacity = '1';
-            homeDetail.style.transform = 'translateX(0)';
-        }
-        if (homeImgBox) {
-            homeImgBox.style.opacity = '1';
-            homeImgBox.style.transform = 'translateX(0)';
-        }
-    }, 300);
-
-    // Aparición progresiva de títulos
-    setTimeout(() => {
-        headingElements.forEach((heading, index) => {
-            setTimeout(() => {
-                heading.style.opacity = '1';
-                heading.style.transform = 'scale(1)';
-            }, 200 + index * 150);
-        });
-    }, 500);
-
-    // Animar sección Sobre Mí
-    setTimeout(() => {
-        if (sobreMiSection) {
-            sobreMiSection.style.opacity = '1';
-            sobreMiSection.style.transform = 'translateY(0)';
-        }
-        if (sobreMiContent) {
-            sobreMiContent.style.opacity = '1';
-            sobreMiContent.style.transform = 'translateY(0)';
-        }
-    }, 700);
-
-    // Animar sección Servicios
-    setTimeout(() => {
-        if (servicesContainer) {
-            servicesContainer.style.opacity = '1';
-            servicesContainer.style.transform = 'scale(1)';
-            const serviceBoxes = document.querySelectorAll('.services-container .services-box');
-            serviceBoxes.forEach((box, index) => {
-                setTimeout(() => {
-                    box.style.opacity = '1';
-                    box.style.transform = 'translateY(0)';
-                }, 200 + index * 100);
-            });
-        }
-    }, 900);
-
-    // Animar sección Contacto
-    setTimeout(() => {
-        if (contactSection) {
-            contactSection.style.opacity = '1';
-            contactSection.style.transform = 'translateY(0)';
-        }
-    }, 1100);
+    document.body.style.opacity = '1';
 };
 
-// === EFECTO SCROLL-REVEAL ===
-const revealElements = document.querySelectorAll('section');
-
-function revealOnScroll() {
-    let windowHeight = window.innerHeight;
-    revealElements.forEach(el => {
-        let elementTop = el.getBoundingClientRect().top;
-        if (elementTop < windowHeight - 100) {
-            el.classList.add('active');
+// === SMOOTH SCROLL PARA ANCLAS (NATIVO EN CSS, PERO REFORZADO AQUÍ) ===
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80, // Ajuste por el header sticky
+                behavior: 'smooth'
+            });
         }
     });
-}
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
+});

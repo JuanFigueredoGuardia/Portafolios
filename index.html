@@ -3,281 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Figueredo Guardia | Portafolio</title>
+    <title>Juan Figueredo Guardia | Portafolio Profesional</title>
     <meta name="description" content="Portafolio profesional de Juan Figueredo Guardia: Desarrollo Web, Marketing Digital, Domótica, Arduino y más.">
-    <meta name="theme-color" content="#7cf03d">
+    <meta name="theme-color" content="#004aad">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="Imagenes/favicon.png">
+    <link rel="icon" type="image/png" href="Imagenes/JF.png">
 </head>
 <body>
+    <!-- Header / Navegación -->
     <header class="header">
-        <a href="#" class="logo">JuanFG</a>
+        <a href="#home" class="logo">Juan<span>FG</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="nav-menu">
             <a href="#home" class="active">Inicio</a>
             <a href="#services">Servicios</a>
             <a href="#pricing">Planes</a>
-            <a href="#diseños">Diseños</a>
-            <a href="#posters">Inventos</a>
-            <a href="#formacion">Formación</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#education">Formación</a>
             <a href="#contact">Contacto</a>
         </nav>
     </header>
 
     <!-- Sección Home -->
-    <section class="home active" id="home">
+    <section class="home" id="home">
         <div class="home-detail">
+            <span class="badge">Disponible para nuevos proyectos</span>
             <h1>Juan Figueredo Guardia</h1>
-            <h2>Soy 
-                <span style="--i:4" data-text="Innovador en Domótica">Innovador en Domótica</span>
-                <span style="--i:3" data-text="Diseñador de Marketing">Diseñador de Marketing</span>
-                <span style="--i:2" data-text="Diseñador Web">Diseñador Web</span>
-                <span style="--i:1" data-text="Emprendedor Digital">Emprendedor Digital</span>
-            </h2>
+            <h2 class="typing-text">Soy <span>Desarrollador Web</span></h2>
             <p>
                 ¡Hola! Soy un apasionado por la tecnología, combinando creatividad y técnica para desarrollar soluciones digitales y proyectos innovadores.  
                 Mi objetivo es crear experiencias visualmente impactantes, funcionales y alineadas con la identidad de cada marca.
             </p>
-            <a href="PDF/Currículum Vitae Cv de JuanFigueredoGuardia.pdf" download class="btn">Descargar CV</a>
+            <div class="btn-group">
+                <a href="#contact" class="btn">Hablemos</a>
+                <a href="#projects" class="btn btn-outline">Ver Trabajos</a>
+            </div>
+            <div class="social-links">
+                <a href="mailto:juanfigueredoguardia@gmail.com"><i class='bx bx-envelope'></i></a>
+            </div>
         </div>
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="Imagenes/Captura de pantalla (15).png" alt="Foto de Juan Figueredo Guardia">
+                    <img src="Imagenes/Captura de pantalla (15)-Photoroom.jpg" alt="Juan Figueredo Guardia" referrerPolicy="no-referrer">
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Sección Servicios -->
-    <section class="services active" id="services">
+    <section class="services" id="services">
         <h2 class="heading">Mis <span>Servicios</span></h2>
+        <p class="section-desc">Soluciones integrales que abarcan desde el código hasta el hardware.</p>
         <div class="services-container">
             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-code-alt'></i>
-                    <a href="#"><i class='bx bx-arrow-back'></i></a>
-                </div>
-                <h3>Desarrollo Web Front-end</h3>
-                <p>Creación de interfaces de usuario interactivas y atractivas utilizando HTML, CSS y JavaScript. Enfoque en UX y responsividad.</p>
+                <i class='bx bx-code-alt'></i>
+                <h3>Front-end</h3>
+                <p>Interfaces interactivas y atractivas utilizando HTML, CSS y JavaScript. Enfoque en UX y responsividad.</p>
             </div>
             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-server'></i>
-                    <a href="#"><i class='bx bx-arrow-back'></i></a>
-                </div>
-                <h3>Desarrollo Web Back-end</h3>
-                <p>Construcción de la lógica del servidor, bases de datos y APIs para aplicaciones web robustas.</p>
+                <i class='bx bx-server'></i>
+                <h3>Back-end</h3>
+                <p>Lógica del servidor, bases de datos y APIs para aplicaciones web robustas.</p>
             </div>
             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bxs-devices'></i>
-                    <a href="#"><i class='bx bx-arrow-back'></i></a>
-                </div>
-                <h3>Diseño Web Responsivo</h3>
-                <p>Diseños adaptables a todo tipo de dispositivos para una experiencia fluida.</p>
+                <i class='bx bxs-devices'></i>
+                <h3>Diseño Responsivo</h3>
+                <p>Adaptabilidad total a todo tipo de dispositivos para una experiencia fluida.</p>
             </div>
             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bxs-edit-alt'></i>
-                    <a href="#"><i class='bx bx-arrow-back'></i></a>
-                </div>
-                <h3>Mantenimiento y Optimización</h3>
+                <i class='bx bxs-edit-alt'></i>
+                <h3>Optimización</h3>
                 <p>Actualizaciones y mejoras para asegurar seguridad y rendimiento web.</p>
             </div>
             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-plug'></i>
-                    <a href="#"><i class='bx bx-arrow-back'></i></a>
-                </div>
+                <i class='bx bx-plug'></i>
                 <h3>Proyectos Arduino</h3>
-                <p>Proyectos electrónicos personalizados con sensores y actuadores.</p>
+                <p>Proyectos electrónicos personalizados con sensores y actuadores inteligentes.</p>
             </div>
             <div class="services-box">
-                <div class="icon">
-                    <i class='bx bx-bulb'></i>
-                    <a href="#"><i class='bx bx-arrow-back'></i></a>
-                </div>
-                <h3>Consultoría Web</h3>
-                <p>Asesoría inicial para definir estrategias de presencia online.</p>
+                <i class='bx bx-bulb'></i>
+                <h3>Consultoría</h3>
+                <p>Asesoría estratégica para definir tu presencia online de manera efectiva.</p>
             </div>
         </div>
     </section>
+
+    <!-- Sección Tech Stack -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Tech <span>Stack</span></h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class='bx bxl-react' style="color: #61DBFB;"></i>
+                <div>
+                    <h4>React & Vite</h4>
+                    <p>Construcción de SPAs rápidas con componentes reutilizables.</p>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class='bx bxl-tailwind-css' style="color: #38B2AC;"></i>
+                <div>
+                    <h4>Tailwind CSS</h4>
+                    <p>Diseño visual moderno mediante utilidades de CSS.</p>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class='bx bx-chip' style="color: #00979D;"></i>
+                <div>
+                    <h4>Arduino & ESP32</h4>
+                    <p>Programación de microcontroladores para domótica e IoT.</p>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class='bx bx-trending-up' style="color: #FFD700;"></i>
+                <div>
+                    <h4>Marketing Digital</h4>
+                    <p>Estrategias de contenido y posicionamiento de marca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Planes -->
     <section class="pricing" id="pricing">
-  <h2 class="heading">Planes y <span>Precios</span></h2>
-
-  <div class="pricing-container">
-
-    <!-- Desarrollo Web -->
-    <div class="pricing-box">
-      <i class='bx bx-code-alt'></i>
-      <h3>Desarrollo Web</h3>
-      <p>
-        Tienda online: <strong>$85.000</strong><br>
-        Web a medida: <strong>$120.000</strong><br>
-        Portafolio: <strong>$75.000</strong><br>
-        Landing page: <strong>$50.000</strong><br>
-        Micrositio: <strong>$45.000</strong><br>
-        Catálogo digital: <strong>$60.000</strong><br>
-        SEO básico: <strong>$25.000</strong>
-      </p>
-    </div>
-
-    <!-- Contenido & Marketing -->
-    <div class="pricing-box">
-      <i class='bx bx-bulb'></i>
-      <h3>Contenido & Marketing</h3>
-      <p>
-        Post para redes: <strong>$25.000</strong><br>
-        Publicidades: <strong>$30.000</strong><br>
-        Logo + identidad: <strong>$65.000</strong>
-      </p>
-    </div>
-
-    <!-- Diseño Gráfico & Documentos -->
-    <div class="pricing-box">
-      <i class='bx bx-paint'></i>
-      <h3>Diseño Gráfico & Documentos</h3>
-      <p>
-        CV o Portafolio: <strong>$55.000</strong><br>
-        Tarjetas digitales: <strong>$15.000</strong><br>
-        Tarjeta presentación: <strong>$10.000</strong><br>
-        Retoque imágenes: <strong>$8.000</strong><br>
-        Catálogo PDF: <strong>$40.000</strong><br>
-        Documentos PDF: <strong>$12.000</strong><br>
-        Presentaciones: <strong>$45.000</strong>
-      </p>
-    </div>
-
-    <!-- Menús & QR -->
-    <div class="pricing-box">
-      <i class='bx bx-qr'></i>
-      <h3>Menús & QR</h3>
-      <p>
-        Menú digital + QR: <strong>$18.000</strong><br>
-        Presentación QR: <strong>$12.000</strong>
-      </p>
-    </div>
-
-    <!-- Combos Fijos -->
-    <div class="pricing-box">
-      <i class='bx bx-package'></i>
-      <h3>Combos Fijos</h3>
-      <p>
-        Emprendedor: <strong>$95.000</strong><br>
-        Tienda Web: <strong>$130.000</strong><br>
-        Marca Full: <strong>$160.000</strong><br>
-        Diseño emprendimiento: <strong>$85.000</strong>
-      </p>
-    </div>
-
-    <!-- Actualizaciones & Adicionales -->
-    <div class="pricing-box">
-      <i class='bx bx-plus-circle'></i>
-      <h3>Actualizaciones & Adicionales</h3>
-      <p>
-        Imagen nueva: <strong>$7.000</strong><br>
-        Video nuevo: <strong>$9.000</strong><br>
-        Hora extra: <strong>$6.500</strong>
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- Sección Diseños -->
-    <section class="diseños active" id="diseños">
-        <h2 class="heading">Mis <span>Diseños</span></h2>
-        <div class="diseños-container">
-            <div class="diseño-item">
-                <h2>Página del clima</h2>
-                <img src="Imagenes/Captura de pantalla (17).png" alt="">
-                <a href="https://juanfigueredoguardia.github.io/CentroClimatico/" target="_blank">Ver Diseño</a>
+        <h2 class="heading">Planes y <span>Precios</span></h2>
+        <div class="pricing-container">
+            <div class="pricing-box">
+                <i class='bx bx-code-block'></i>
+                <h3>Desarrollo Web</h3>
+                <ul>
+                    <li>Tienda online: <strong>$85.000</strong></li>
+                    <li>Web a medida: <strong>$120.000</strong></li>
+                    <li>Portafolio: <strong>$75.000</strong></li>
+                    <li>Landing page: <strong>$50.000</strong></li>
+                </ul>
             </div>
-            <div class="diseño-item">
-                <h2>Tienda Va.Bahia</h2>
-                <img src="Imagenes/Captura de pantalla (28).png" alt="">
-                <a href="https://vabahia-tienda-online.netlify.app/" target="_blank">Ver Diseño</a>
+            <div class="pricing-box">
+                <i class='bx bx-palette'></i>
+                <h3>Marketing & Diseño</h3>
+                <ul>
+                    <li>Post para redes: <strong>$25.000</strong></li>
+                    <li>Logo + identidad: <strong>$65.000</strong></li>
+                    <li>CV o Portafolio: <strong>$55.000</strong></li>
+                    <li>Presentaciones: <strong>$45.000</strong></li>
+                </ul>
             </div>
-            <div class="diseño-item">
-                <h2>Frecuencia Mística</h2>
-                <img src="Imagenes/Captura de pantalla (27).png" alt="">
-                <a href="https://frecuenciamistica.netlify.app/" target="_blank">Ver Diseño</a>
+            <div class="pricing-box">
+                <i class='bx bx-package'></i>
+                <h3>Combos Fijos</h3>
+                <ul>
+                    <li>Emprendedor: <strong>$95.000</strong></li>
+                    <li>Tienda Web: <strong>$130.000</strong></li>
+                    <li>Marca Full: <strong>$160.000</strong></li>
+                    <li>Menú Digital + QR: <strong>$18.000</strong></li>
+                </ul>
             </div>
         </div>
     </section>
 
-<section class="posters active" id="posters">
-        <h2 class="heading">Inventos con <span>Arduino y ESP32</span></h2>
-        <div class="posters-container">
-            <div class="poster-item">
-                <div class="poster-img">
-                    <img src="Imagenes/WhatsApp Image 2025-10-13 at 08.44.38.jpeg" alt="Proyecto ESP32 Alarma Inteligente">
+    <!-- Sección Proyectos -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Mis <span>Proyectos</span></h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="Imagenes/Captura de pantalla (17).png" alt="Centro Climático" referrerPolicy="no-referrer">
                 </div>
-                <div class="poster-info">
-                    <h3>Alarma de Incendio IoT</h3>
-                    <p>
-                        Desarrollo de un sistema de seguridad inteligente basado en <strong>ESP32</strong>. 
-                        Utiliza sensores de alta precisión para detectar humo y fuego, enviando notificaciones críticas 
-                        en tiempo real a través de un <strong>Bot de Telegram</strong>.
-                    </p>
-                    <div class="project-footer">
-                        <a href="PDF/GuardiaFire.pdf.pdf" download class="download-link">
-                            <i class='bx bxs-file-pdf'></i> Descargar detalles técnicos (PDF)
-                        </a>
+                <div class="project-info">
+                    <h3>Centro Climático</h3>
+                    <p>Visualización de datos meteorológicos en tiempo real consumiendo APIs externas.</p>
+                    <div class="project-meta">
+                        <span>HTML</span><span>CSS</span><span>JS</span>
                     </div>
+                    <a href="https://juanfigueredoguardia.github.io/CentroClimatico/" target="_blank" class="project-link">Ver Diseño <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="Imagenes/Captura de pantalla (28).png" alt="Tienda Va.Bahia" referrerPolicy="no-referrer">
+                </div>
+                <div class="project-info">
+                    <h3>Tienda Va.Bahia</h3>
+                    <p>E-commerce completo enfocado en la facilidad de navegación y compra intuitiva.</p>
+                    <div class="project-meta">
+                        <span>React</span><span>Tailwind</span><span>Netlify</span>
+                    </div>
+                    <a href="https://vabahia-tienda-online.netlify.app/" target="_blank" class="project-link">Ver Diseño <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="Imagenes/Captura de pantalla (27).png" alt="Tienda Va.Bahia" referrerPolicy="no-referrer">
+                </div>
+                <div class="project-info">
+                    <h3>Frecuencia Mistica</h3>
+                    <p>Landing Pages donde nos enfocamos a mostrar trabajos</p>
+                    <div class="project-meta">
+                        <span>React</span><span>Tailwind</span><span>Netlify</span>
+                    </div>
+                    <a href="https://frecuenciamistica.netlify.app/" target="_blank" class="project-link">Ver Diseño <i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="Imagenes/WhatsApp Image 2025-10-13 at 08.44.38.jpeg" alt="Alarma de Incendio IoT" referrerPolicy="no-referrer">
+                </div>
+                <div class="project-info">
+                    <h3>Alarma IoT (ESP32)</h3>
+                    <p>Sistema de seguridad que detecta humo y envía alertas vía Bot de Telegram.</p>
+                    <div class="project-meta">
+                        <span>Arduino</span><span>ESP32</span><span>IoT</span>
+                    </div>
+                    <p class="project-result"><strong>Resultado:</strong> Notificaciones críticas en tiempo real.</p>
+                    <a href="PDF/GuardiaFire.pdf.pdf" class="project-link">Detalles Técnicos <i class='bx bx-file'></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección Formación -->
-    <section class="formacion active" id="formacion">
+    <section class="education" id="education">
         <h2 class="heading">Mi <span>Formación</span></h2>
-        <div class="formacion-container">
-            <div class="formacion-box">
-                <img src="Imagenes/WhatsApp Image 2025-08-07 at 10.33.49.jpeg" alt="">
-                <h3>Curso Programación Arduino</h3>
-                <p>Recibido en 2023</p>
-                <a href="PDF/Figueredo Guardia.pdf" class="btn" download>Certificado</a>
+        <div class="education-container">
+            <div class="education-box">
+                <i class='bx bx-award'></i>
+                <h3>Programación Arduino</h3>
+                <p>Recibido en 2023 - UTN</p>
+                <a href="PDF/Figueredo Guardia.pdf" class="btn-sm">Certificado</a>
             </div>
-            <div class="formacion-box">
-                <img src="Imagenes/WhatsApp Image 2025-08-07 at 10.33.50.jpeg" alt="">
-                <h3>Tutoría de Pares UTN</h3>
-                <p>Recibido en 2024</p>
-                <a href="PDF/Figueredo Guardia_firmado (1).pdf" class="btn" download>Certificado</a>
+            <div class="education-box">
+                <i class='bx bx-book-open'></i>
+                <h3>Tutoría de Pares</h3>
+                <p>Recibido en 2024 - UTN</p>
+                <a href="PDF/Figueredo Guardia_firmado (1).pdf" class="btn-sm">Certificado</a>
             </div>
-            <div class="formacion-box">
-                <img src="Imagenes/WhatsApp Image 2025-08-09 at 01.11.13.jpeg" alt="">
-                <h3>Orientación Académica UTN</h3>
-                <p>Recibido en 2025</p>
-                <a href="PDF/Certificados - Orientaciones - Figueredo Guardia_firmado.pdf" class="btn" download>Certificado</a>
+            <div class="education-box">
+                <i class='bx bx-check-double'></i>
+                <h3>Orientación Académica</h3>
+                <p>Recibido en 2025 - UTN</p>
+                <a href="PDF/Certificados - Orientaciones - Figueredo Guardia_firmado.pdf" class="btn-sm">Certificado</a>
             </div>
         </div>
     </section>
 
     <!-- Sección Contacto -->
-    <section class="contact active" id="contact">
+    <section class="contact" id="contact">
         <h2 class="heading"><span>Contácta</span>me</h2>
         <div class="contact-container">
-            <p class="contact-message">¡Estoy emocionado de colaborar en tu próximo proyecto! Escríbeme y hablemos.</p>
+            <p>¿Tienes un proyecto en mente? Escríbeme y hablemos sobre cómo podemos colaborar.</p>
             <div class="contact-links">
-                <a href="https://wa.me/+5493454945349" target="_blank">
-                    <i class='bx bxl-whatsapp'></i> WhatsApp
+                <a href="https://wa.me/+5493454945349" target="_blank" class="btn">
+                    <i class='bx bxl-whatsapp'></i> WhatsApp Directo
+                </a>
+                <a href="mailto:juanfigueredoguardia@gmail.com" class="btn btn-outline">
+                    <i class='bx bx-envelope'></i> Enviar Email
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/+5493454945349" target="_blank" class="whatsapp-float">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
-
-
