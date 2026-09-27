@@ -24,7 +24,7 @@ function initNavigation() {
     const menuIcon = document.querySelector('#menu-icon');
     const navbar = document.querySelector('.nav-menu');
     const header = document.querySelector('.header');
-    const navLinks = document.querySelectorAll('.nav-menu a:not(.header-cta)');
+    const allNavLinks = document.querySelectorAll('.nav-menu a');
     const sections = document.querySelectorAll('section');
 
     let overlay = document.querySelector('.nav-overlay');
@@ -37,6 +37,7 @@ function initNavigation() {
     const toggleMenu = () => {
         const isActive = navbar.classList.toggle('active');
         menuIcon.classList.toggle('bx-x');
+        if (header) header.classList.toggle('menu-open', isActive);
         overlay.classList.toggle('active', isActive);
         document.body.style.overflow = isActive ? 'hidden' : '';
     };
@@ -44,6 +45,7 @@ function initNavigation() {
     const closeMenu = () => {
         navbar.classList.remove('active');
         menuIcon.classList.remove('bx-x');
+        if (header) header.classList.remove('menu-open');
         overlay.classList.remove('active');
         document.body.style.overflow = '';
     };
@@ -53,6 +55,20 @@ function initNavigation() {
     }
 
     overlay.addEventListener('click', closeMenu);
+
+    // Cerrar al pulsar Escape
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navbar.classList.contains('active')) {
+            closeMenu();
+        }
+    });
+
+    // Cerrar al redimensionar a pantalla grande
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 991 && navbar.classList.contains('active')) {
+            closeMenu();
+        }
+    });
 
     // Scroll Spy & Sticky Header
     window.addEventListener('scroll', () => {
@@ -68,14 +84,14 @@ function initNavigation() {
             const id = sec.getAttribute('id');
 
             if (top >= offset && top < offset + height) {
-                navLinks.forEach(link => link.classList.remove('active'));
+                allNavLinks.forEach(link => link.classList.remove('active'));
                 const activeLink = document.querySelector(`.nav-menu a[href*="${id}"]`);
                 if (activeLink) activeLink.classList.add('active');
             }
         });
     }, { passive: true });
 
-    navLinks.forEach(link => {
+    allNavLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 }

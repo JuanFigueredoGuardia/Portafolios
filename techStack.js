@@ -107,6 +107,19 @@ export const techStackData = [
       <circle cx="13.5" cy="12" r="1" fill="#004AAD"/>
     </svg>`
   },
+  {
+    id: 'python',
+    name: 'Python',
+    category: 'desarrollo',
+    categoryLabel: 'Desarrollo',
+    badge: 'Automatización & Scripts',
+    desc: 'Lógica backend, scripts de automatización, análisis de datos e integración de IA.',
+    color: '#3776AB',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M11.87 2C6.88 2 7.19 4.16 7.19 4.16L7.2 6.4H12.2V7.15H5.17C5.17 7.15 2 6.79 2 11.84C2 16.89 4.78 16.66 4.78 16.66H6.44V14.33C6.44 14.33 6.35 11.53 9.18 11.53H14.19C14.19 11.53 16.89 11.62 16.89 8.97V4.08C16.89 4.08 17.25 2 11.87 2ZM9.56 3.51C10.14 3.51 10.6 3.98 10.6 4.56C10.6 5.14 10.14 5.6 9.56 5.6C8.98 5.6 8.52 5.14 8.52 4.56C8.52 3.98 8.98 3.51 9.56 3.51Z" fill="#3776AB"/>
+      <path d="M12.13 22C17.12 22 16.81 19.84 16.81 19.84L16.8 17.6H11.8V16.85H18.83C18.83 16.85 22 17.21 22 12.16C22 7.11 19.22 7.34 19.22 7.34H17.56V9.67C17.56 9.67 17.65 12.47 14.82 12.47H9.81C9.81 12.47 7.11 12.38 7.11 15.03V19.92C7.11 19.92 6.75 22 12.13 22ZM14.44 20.49C13.86 20.49 13.4 20.02 13.4 19.44C13.4 18.86 13.86 18.4 14.44 18.4C15.02 18.4 15.48 18.86 15.48 19.44C15.48 20.02 15.02 20.49 14.44 20.49Z" fill="#FFD438"/>
+    </svg>`
+  },
 
   // --- ENTORNOS Y CONTROL DE VERSIONES ---
   {
