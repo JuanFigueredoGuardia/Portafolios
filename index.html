@@ -17,11 +17,14 @@
     <!-- BoxIcons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS del Portafolio -->
     <link rel="stylesheet" href="style.css">
     
     <!-- Favicon Oficial -->
-    <link rel="icon" type="image/png" href="/Imagenes/JF.png">
+    <link rel="icon" type="image/png" href="Imagenes/JF.png">
 </head>
 <body>
 
@@ -57,7 +60,7 @@
             <h1>Juan Figueredo Guardia</h1>
             
             <div class="typing-container">
-                Soy&nbsp;<span class="typing-text"></span>
+                Soy&nbsp;<span class="typing-text">Desarrollador Web Full-Stack</span>
             </div>
             
             <p>
@@ -97,7 +100,7 @@
                 <div class="img-ambient-glow"></div>
                 <div class="img-ring-orbit"></div>
                 <div class="img-item">
-                    <img src="/Imagenes/Captura de pantalla (15)-Photoroom.jpg" alt="Juan Figueredo Guardia - Desarrollador Web & IoT" referrerPolicy="no-referrer">
+                    <img src="Imagenes/Captura de pantalla (15)-Photoroom.jpg" alt="Juan Figueredo Guardia - Desarrollador Web & IoT" referrerPolicy="no-referrer">
                 </div>
                 
                 <!-- Badge flotante de especialidad -->
@@ -253,9 +256,729 @@
             </div>
         </div>
 
-        <!-- Rejilla de tarjetas de herramientas con logos vectoriales -->
+        <!-- Rejilla de tarjetas de herramientas con logos vectoriales PRE-RENDERIZADOS -->
         <div class="tech-grid" id="tech-grid">
-            <!-- Renderizado dinámico vía JavaScript con logos vectoriales oficiales -->
+            <div class="tool-card" data-category="desarrollo" data-name="html5" data-desc="maquetación web accesible, seo optimizado y buenas prácticas estándar." data-badge="estructura semántica" data-aos="fade-up" data-aos-delay="0" style="--card-brand-color: #E34F26; --tool-bg-glow: #E34F2615;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #E34F2635;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M4.14 2L5.8 20.6L12 22.32L18.2 20.6L19.86 2H4.14Z" fill="#E34F26"/>
+      <path d="M12 20.46L16.82 19.12L18.17 3.82H12V20.46Z" fill="#EF652A"/>
+      <path d="M12 7.74H8.45L8.71 10.63H12V7.74ZM12 13.52H8.97L9.22 16.32L12 17.07V13.52Z" fill="#EBEBEB"/>
+      <path d="M12 7.74V10.63H15.29L15.03 13.52H12V16.32L14.78 15.57L15.1 11.97H15.55L15.29 14.86H12V17.07L15.08 16.24L15.55 11H8.75L8.5 8.11H15.82L16.08 5.22H7.92L8.43 11H12V7.74Z" fill="white"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>HTML5</h4>
+                        <span class="tool-badge-meta">Estructura Semántica</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Maquetación web accesible, SEO optimizado y buenas prácticas estándar.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Desarrollo</span>
+                    <i class='bx bx-check-shield' style="color: #E34F26; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="desarrollo" data-name="css3" data-desc="diseño responsivo, grid, flexbox, micro-animaciones y variables modernas." data-badge="estilos & animación" data-aos="fade-up" data-aos-delay="50" style="--card-brand-color: #1572B6; --tool-bg-glow: #1572B615;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #1572B635;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M4.14 2L5.8 20.6L12 22.32L18.2 20.6L19.86 2H4.14Z" fill="#1572B6"/>
+      <path d="M12 20.46L16.82 19.12L18.17 3.82H12V20.46Z" fill="#33A9DC"/>
+      <path d="M12 7.74H8.45L8.71 10.63H12V7.74ZM12 13.52H8.97L9.22 16.32L12 17.07V13.52Z" fill="#EBEBEB"/>
+      <path d="M15.55 7.74H12V10.63H15.29L15.03 13.52H12V16.32L14.78 15.57L15.15 11.45H12V13.52H13.6L13.43 15.35L12 15.74V17.07L15.08 16.24L15.55 11H8.75L8.5 8.11H15.82L16.08 5.22H7.92L8.43 11H12V7.74Z" fill="white"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>CSS3</h4>
+                        <span class="tool-badge-meta">Estilos & Animación</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Diseño responsivo, Grid, Flexbox, micro-animaciones y variables modernas.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Desarrollo</span>
+                    <i class='bx bx-check-shield' style="color: #1572B6; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="desarrollo" data-name="php" data-desc="desarrollo backend dinámico, procesamiento de formularios y conexión a dbs." data-badge="backend & lógica" data-aos="fade-up" data-aos-delay="100" style="--card-brand-color: #777BB4; --tool-bg-glow: #777BB415;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #777BB435;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M12 3C5.7 3 0.6 6.6 0.6 11C0.6 15.4 5.7 19 12 19C18.3 19 23.4 15.4 23.4 11C23.4 6.6 18.3 3 12 3ZM7.8 14H6.2L7 9.8H9.3C10.5 9.8 11.2 10.4 11 11.4C10.8 12.5 9.9 14 7.8 14ZM14 14H12.4L13.2 9.8H14.8L14.1 14ZM19.4 11.4C19.2 12.5 18.3 14 16.2 14H14.6L15.4 9.8H17.7C18.9 9.8 19.6 10.4 19.4 11.4Z" fill="#777BB4"/>
+      <path d="M7.7 11.2L7.3 12.8H8C8.7 12.8 9.1 12.4 9.2 11.9C9.3 11.4 9 11.2 8.5 11.2H7.7ZM16.1 11.2L15.7 12.8H16.4C17.1 12.8 17.5 12.4 17.6 11.9C17.7 11.4 17.4 11.2 16.9 11.2H16.1Z" fill="white"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>PHP</h4>
+                        <span class="tool-badge-meta">Backend & Lógica</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Desarrollo backend dinámico, procesamiento de formularios y conexión a DBs.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Desarrollo</span>
+                    <i class='bx bx-check-shield' style="color: #777BB4; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="desarrollo" data-name="sql" data-desc="modelado relacional, consultas eficientes, integridad y gestión de datos." data-badge="bases de datos" data-aos="fade-up" data-aos-delay="150" style="--card-brand-color: #00758F; --tool-bg-glow: #00758F15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #00758F35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <ellipse cx="12" cy="6" rx="8" ry="3" fill="#00758F"/>
+      <path d="M4 6V11C4 12.66 7.58 14 12 14C16.42 14 20 12.66 20 11V6" stroke="#00758F" stroke-width="2" fill="none"/>
+      <path d="M4 11V16C4 17.66 7.58 19 12 19C16.42 19 20 17.66 20 16V11" stroke="#00758F" stroke-width="2" fill="none"/>
+      <circle cx="12" cy="11" r="1.5" fill="#5DE0E6"/>
+      <circle cx="12" cy="16" r="1.5" fill="#5DE0E6"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>SQL</h4>
+                        <span class="tool-badge-meta">Bases de Datos</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Modelado relacional, consultas eficientes, integridad y gestión de datos.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Desarrollo</span>
+                    <i class='bx bx-check-shield' style="color: #00758F; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="desarrollo" data-name="java" data-desc="programación orientada a objetos, lógica estructurada y fundamentos sólidos." data-badge="poo & algoritmos" data-aos="fade-up" data-aos-delay="200" style="--card-brand-color: #ED8B00; --tool-bg-glow: #ED8B0015;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #ED8B0035;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M8.5 17.2C8.5 17.2 9.5 17.7 11.3 17.7C13.4 17.7 15.2 17 15.2 17C15.2 17 14.1 17.5 12.5 17.5C10.7 17.5 8.5 17.2 8.5 17.2Z" fill="#ED8B00"/>
+      <path d="M7 19.5C7 19.5 8.6 20.3 11.5 20.3C14.7 20.3 17 19.4 17 19.4C17 19.4 15.6 20 12.8 20C9.6 20 7 19.5 7 19.5Z" fill="#ED8B00"/>
+      <path d="M12.8 2C12.8 2 14.8 4 13.5 6.5C12.3 8.7 11.2 9.3 12.4 11.2C13.6 13 12.7 14.5 12.7 14.5C12.7 14.5 14.2 13 13.3 11.6C12.2 9.9 13.5 9 14.3 7.8C15.4 6.2 14.8 3.8 12.8 2Z" fill="#5382A1"/>
+      <path d="M15.5 10.5C15.5 10.5 17.3 12 15.5 14.3C14.1 16 12 16.5 10.2 16.5C8.4 16.5 6.8 16 6.8 16C6.8 16 8 16.5 10.2 16.5C12.5 16.5 14.8 15.8 15.8 14.2C16.8 12.6 15.5 10.5 15.5 10.5Z" fill="#ED8B00"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Java</h4>
+                        <span class="tool-badge-meta">POO & Algoritmos</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Programación orientada a objetos, lógica estructurada y fundamentos sólidos.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Desarrollo</span>
+                    <i class='bx bx-check-shield' style="color: #ED8B00; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="desarrollo" data-name="react" data-desc="arquitectura por componentes, hooks reactivos, spas dinámicas e interactivas." data-badge="frontend moderno" data-aos="fade-up" data-aos-delay="250" style="--card-brand-color: #61DAFB; --tool-bg-glow: #61DAFB15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #61DAFB35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.5" transform="rotate(30 12 12)"/>
+      <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.5" transform="rotate(90 12 12)"/>
+      <ellipse cx="12" cy="12" rx="3.5" ry="9" stroke="#61DAFB" stroke-width="1.5" transform="rotate(150 12 12)"/>
+      <circle cx="12" cy="12" r="1.8" fill="#61DAFB"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>React</h4>
+                        <span class="tool-badge-meta">Frontend Moderno</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Arquitectura por componentes, hooks reactivos, SPAs dinámicas e interactivas.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Desarrollo</span>
+                    <i class='bx bx-check-shield' style="color: #61DAFB; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="desarrollo" data-name="json" data-desc="intercambio estructurado, integración rest apis, config y payloads dinámicos." data-badge="estructura de datos" data-aos="fade-up" data-aos-delay="0" style="--card-brand-color: #004AAD; --tool-bg-glow: #004AAD15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #004AAD35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="4" width="18" height="16" rx="4" fill="#004AAD" fill-opacity="0.1" stroke="#004AAD" stroke-width="1.8"/>
+      <path d="M8.5 8C7.5 8 7 8.5 7 9.5V11C7 11.6 6.5 12 6 12C6.5 12 7 12.4 7 13V14.5C7 15.5 7.5 16 8.5 16" stroke="#004AAD" stroke-width="2" stroke-linecap="round"/>
+      <path d="M15.5 8C16.5 8 17 8.5 17 9.5V11C17 11.6 17.5 12 18 12C17.5 12 17 12.4 17 13V14.5C17 15.5 16.5 16 15.5 16" stroke="#004AAD" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="10.5" cy="12" r="1" fill="#004AAD"/>
+      <circle cx="13.5" cy="12" r="1" fill="#004AAD"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>JSON</h4>
+                        <span class="tool-badge-meta">Estructura de Datos</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Intercambio estructurado, integración REST APIs, config y payloads dinámicos.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Desarrollo</span>
+                    <i class='bx bx-check-shield' style="color: #004AAD; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="entornos" data-name="visual studio code" data-desc="entorno de desarrollo ágil con extensiones avanzadas, linting y debugging." data-badge="editor principal" data-aos="fade-up" data-aos-delay="50" style="--card-brand-color: #007ACC; --tool-bg-glow: #007ACC15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #007ACC35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M17.5 2.5L7.5 9.8L3 6.5L1.5 7.8L5 12L1.5 16.2L3 17.5L7.5 14.2L17.5 21.5L22.5 19V5L17.5 2.5Z" fill="#007ACC"/>
+      <path d="M17.5 7.2V16.8L10.2 12L17.5 7.2Z" fill="#1F9CF0"/>
+      <path d="M17.5 2.5L22.5 5V7.5L17.5 7.2V2.5Z" fill="#0065A9"/>
+      <path d="M17.5 21.5L22.5 19V16.5L17.5 16.8V21.5Z" fill="#0065A9"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Visual Studio Code</h4>
+                        <span class="tool-badge-meta">Editor Principal</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Entorno de desarrollo ágil con extensiones avanzadas, linting y debugging.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Entornos & Deploy</span>
+                    <i class='bx bx-check-shield' style="color: #007ACC; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="entornos" data-name="arduino ide" data-desc="compilación y carga de firmware en placas esp32, nano, uno y microchips." data-badge="hardware & c++" data-aos="fade-up" data-aos-delay="100" style="--card-brand-color: #00979D; --tool-bg-glow: #00979D15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #00979D35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M8 7C5.24 7 3 9.24 3 12C3 14.76 5.24 17 8 17C10.15 17 11.96 15.65 12.65 13.76C12.35 13.25 12.15 12.65 12.15 12C12.15 11.35 12.35 10.75 12.65 10.24C11.96 8.35 10.15 7 8 7Z" fill="#00979D"/>
+      <path d="M16 7C13.85 7 12.04 8.35 11.35 10.24C11.65 10.75 11.85 11.35 11.85 12C11.85 12.65 11.65 13.25 11.35 13.76C12.04 15.65 13.85 17 16 17C18.76 17 21 14.76 21 12C21 9.24 18.76 7 16 7Z" fill="#008184"/>
+      <path d="M6 12H10" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M14 12H18M16 10V14" stroke="white" stroke-width="1.6" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Arduino IDE</h4>
+                        <span class="tool-badge-meta">Hardware & C++</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Compilación y carga de firmware en placas ESP32, Nano, Uno y microchips.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Entornos & Deploy</span>
+                    <i class='bx bx-check-shield' style="color: #00979D; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="entornos" data-name="github" data-desc="repositorios seguros, ci/cd, ramas de trabajo colaborativas y despliegue." data-badge="control de versiones" data-aos="fade-up" data-aos-delay="150" style="--card-brand-color: #181717; --tool-bg-glow: #18171715;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #18171735;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017C2 16.446 4.87 20.198 8.844 21.528C9.344 21.621 9.527 21.312 9.527 21.047C9.527 20.812 9.518 20.187 9.514 19.362C6.732 19.967 6.145 18.021 6.145 18.021C5.69 16.866 5.034 16.559 5.034 16.559C4.127 15.939 5.103 15.952 5.103 15.952C6.106 16.022 6.634 16.983 6.634 16.983C7.525 18.51 8.97 18.069 9.539 17.813C9.63 17.167 9.888 16.726 10.174 16.476C7.953 16.223 5.618 15.364 5.618 11.536C5.618 10.446 6.008 9.554 6.647 8.857C6.544 8.604 6.202 7.587 6.745 6.222C6.745 6.222 7.583 5.953 9.489 7.244C10.285 7.022 11.135 6.911 11.984 6.907C12.833 6.911 13.684 7.022 14.481 7.244C16.386 5.953 17.222 6.222 17.222 6.222C17.767 7.587 17.426 8.604 17.323 8.857C17.964 9.554 18.351 10.446 18.351 11.536C18.351 15.374 16.012 16.22 13.784 16.468C14.143 16.778 14.464 17.391 14.464 18.328C14.464 19.673 14.452 20.758 14.452 21.047C14.452 21.315 14.631 21.628 15.141 21.527C19.123 20.194 22 16.444 22 12.017C22 6.484 17.523 2 12 2Z" fill="#181717"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>GitHub</h4>
+                        <span class="tool-badge-meta">Control de Versiones</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Repositorios seguros, CI/CD, ramas de trabajo colaborativas y despliegue.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Entornos & Deploy</span>
+                    <i class='bx bx-check-shield' style="color: #181717; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="entornos" data-name="netlify" data-desc="despliegues automáticos desde git, ssl instantáneo y cdn global." data-badge="hosting & edge" data-aos="fade-up" data-aos-delay="200" style="--card-brand-color: #00C7B7; --tool-bg-glow: #00C7B715;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #00C7B735;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M12 2.5L3.5 11L12 19.5L20.5 11L12 2.5Z" fill="#00C7B7" fill-opacity="0.15"/>
+      <path d="M12 2.5L20.5 11L18 13.5L12 7.5L6 13.5L3.5 11L12 2.5Z" fill="#00C7B7"/>
+      <path d="M12 21.5L3.5 13L6 10.5L12 16.5L18 10.5L20.5 13L12 21.5Z" fill="#058C80"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Netlify</h4>
+                        <span class="tool-badge-meta">Hosting & Edge</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Despliegues automáticos desde Git, SSL instantáneo y CDN global.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Entornos & Deploy</span>
+                    <i class='bx bx-check-shield' style="color: #00C7B7; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="entornos" data-name="hostinger" data-desc="administración de hosting web, dominios, certificados y bases de datos." data-badge="servidores & dns" data-aos="fade-up" data-aos-delay="250" style="--card-brand-color: #673DE6; --tool-bg-glow: #673DE615;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #673DE635;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="12" cy="12" r="10" fill="#673DE6" fill-opacity="0.12"/>
+      <path d="M8 6V18M16 6V18M8 12H16" stroke="#673DE6" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="8" cy="6" r="1.5" fill="#673DE6"/>
+      <circle cx="16" cy="18" r="1.5" fill="#673DE6"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Hostinger</h4>
+                        <span class="tool-badge-meta">Servidores & DNS</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Administración de hosting web, dominios, certificados y bases de datos.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Entornos & Deploy</span>
+                    <i class='bx bx-check-shield' style="color: #673DE6; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="entornos" data-name="wordpress" data-desc="construcción y personalización de sitios autogestionables y tiendas woocommerce." data-badge="cms & e-commerce" data-aos="fade-up" data-aos-delay="0" style="--card-brand-color: #21759B; --tool-bg-glow: #21759B15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #21759B35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="12" cy="12" r="10" fill="#21759B"/>
+      <path d="M3.2 12C3.2 15.65 5.4 18.78 8.54 20.08L4.65 9.42C3.73 10.2 3.2 11.05 3.2 12ZM17.15 11.53C17.15 10.3 16.71 9.45 16.34 8.81C15.85 8 15.38 7.34 15.38 6.55C15.38 5.66 16.05 4.86 17 4.86C17.14 4.86 17.27 4.88 17.4 4.9C15.93 3.72 14.05 3 12 3C9.72 3 7.64 3.89 6.13 5.34C6.46 5.36 6.88 5.38 7.33 5.38C8.36 5.38 9.94 5.25 9.94 5.25C10.47 5.22 10.53 5.97 10 6.03C10 6.03 9.47 6.09 8.94 6.12L12.18 15.75L14.13 9.9L12.75 6.12C12.22 6.09 11.71 6.03 11.71 6.03C11.18 5.97 11.24 5.22 11.77 5.25C11.77 5.25 13.38 5.38 14.38 5.38C15.38 5.38 16.97 5.25 16.97 5.25C17.5 5.22 17.56 5.97 17.03 6.03C17.03 6.03 16.5 6.09 15.97 6.12L19.18 15.68L20.06 12.7C20.47 11.28 20.8 9.9 20.8 8.81C20.8 8.44 20.76 8.08 20.7 7.74C21.39 8.98 21.8 10.45 21.8 12C21.8 14.88 20.36 17.43 18.17 18.98L13.56 6.17L17.15 11.53Z" fill="white"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>WordPress</h4>
+                        <span class="tool-badge-meta">CMS & E-commerce</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Construcción y personalización de sitios autogestionables y tiendas WooCommerce.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Entornos & Deploy</span>
+                    <i class='bx bx-check-shield' style="color: #21759B; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="google gemini" data-desc="integración de modelos avanzados de visión, código y procesamiento de lenguaje." data-badge="llm multimodal" data-aos="fade-up" data-aos-delay="50" style="--card-brand-color: #1A73E8; --tool-bg-glow: #1A73E815;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #1A73E835;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <defs>
+        <linearGradient id="geminiGrad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#1A73E8"/>
+          <stop offset="0.5" stop-color="#8E24AA"/>
+          <stop offset="1" stop-color="#FF5252"/>
+        </linearGradient>
+      </defs>
+      <path d="M12 2C12 7.52 7.52 12 2 12C7.52 12 12 16.48 12 22C12 16.48 16.48 12 22 12C16.48 12 12 7.52 12 2Z" fill="url(#geminiGrad)"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Google Gemini</h4>
+                        <span class="tool-badge-meta">LLM Multimodal</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Integración de modelos avanzados de visión, código y procesamiento de lenguaje.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #1A73E8; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="chatgpt" data-desc="ingeniería de prompts, generación de lógica de negocio y automatización de contenido." data-badge="openai prompting" data-aos="fade-up" data-aos-delay="100" style="--card-brand-color: #10A37F; --tool-bg-glow: #10A37F15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #10A37F35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="12" cy="12" r="10" fill="#10A37F" fill-opacity="0.15"/>
+      <path d="M18.5 10.8C18.2 8.7 16.6 7.2 14.5 7.1C14.1 5.4 12.6 4.2 10.8 4.5C9.3 4.7 8.1 5.8 7.6 7.2C5.9 7.7 4.7 9.2 4.8 11C4.9 12.4 5.7 13.6 7 14.1C6.8 15.9 7.8 17.5 9.5 18C10.9 18.4 12.4 18 13.2 16.9C14.6 17.7 16.4 17.2 17.2 15.8C17.8 14.7 17.7 13.4 17 12.5C18 12.2 18.7 11.5 18.5 10.8Z" stroke="#10A37F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 9L14 15M14 9L10 15" stroke="#10A37F" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>ChatGPT</h4>
+                        <span class="tool-badge-meta">OpenAI Prompting</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Ingeniería de prompts, generación de lógica de negocio y automatización de contenido.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #10A37F; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="claude" data-desc="análisis de código profundo, razonamiento complejo y refinamiento arquitectónico." data-badge="anthropic ai" data-aos="fade-up" data-aos-delay="150" style="--card-brand-color: #D97706; --tool-bg-glow: #D9770615;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #D9770635;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="3" width="18" height="18" rx="6" fill="#CC6B49" fill-opacity="0.12"/>
+      <path d="M12 5V19M5 12H19M7.05 7.05L16.95 16.95M16.95 7.05L7.05 16.95" stroke="#CC6B49" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="12" cy="12" r="2.5" fill="#CC6B49"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Claude</h4>
+                        <span class="tool-badge-meta">Anthropic AI</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Análisis de código profundo, razonamiento complejo y refinamiento arquitectónico.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #D97706; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="google ai studio" data-desc="desarrollo de prototipos rápidos con gemini api, tuning y llamadas a funciones." data-badge="prototipado de ia" data-aos="fade-up" data-aos-delay="200" style="--card-brand-color: #004AAD; --tool-bg-glow: #004AAD15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #004AAD35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="#004AAD" fill-opacity="0.1"/>
+      <path d="M12 6L14 10.5L18.5 12.5L14 14.5L12 19L10 14.5L5.5 12.5L10 10.5L12 6Z" fill="#004AAD"/>
+      <circle cx="18" cy="6" r="1.5" fill="#5DE0E6"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Google AI Studio</h4>
+                        <span class="tool-badge-meta">Prototipado de IA</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Desarrollo de prototipos rápidos con Gemini API, tuning y llamadas a funciones.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #004AAD; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="notebooklm" data-desc="síntesis de fuentes técnicas, resúmenes estructurados y preparación de proyectos." data-badge="investigación & docs" data-aos="fade-up" data-aos-delay="250" style="--card-brand-color: #4285F4; --tool-bg-glow: #4285F415;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #4285F435;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="4" y="3" width="16" height="18" rx="3" fill="#4285F4" fill-opacity="0.12" stroke="#4285F4" stroke-width="1.8"/>
+      <path d="M8 8H16M8 12H14M8 16H12" stroke="#4285F4" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="16" cy="16" r="2" fill="#34A853"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>NotebookLM</h4>
+                        <span class="tool-badge-meta">Investigación & Docs</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Síntesis de fuentes técnicas, resúmenes estructurados y preparación de proyectos.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #4285F4; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="google flow.ia" data-desc="diseño de flujos de trabajo inteligentes y orquestación asistida por ia." data-badge="pipelines inteligentes" data-aos="fade-up" data-aos-delay="0" style="--card-brand-color: #34A853; --tool-bg-glow: #34A85315;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #34A85335;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20" stroke="#34A853" stroke-width="2.2" stroke-linecap="round"/>
+      <circle cx="12" cy="4" r="2" fill="#4285F4"/>
+      <circle cx="20" cy="12" r="2" fill="#FBBC05"/>
+      <circle cx="12" cy="20" r="2" fill="#EA4335"/>
+      <path d="M9 12L11 14L15 10" stroke="#34A853" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Google Flow.ia</h4>
+                        <span class="tool-badge-meta">Pipelines Inteligentes</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Diseño de flujos de trabajo inteligentes y orquestación asistida por IA.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #34A853; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="stitch.ia" data-desc="unión y ensamblaje de componentes dinámicos generados por modelos generativos." data-badge="integración ui/ia" data-aos="fade-up" data-aos-delay="50" style="--card-brand-color: #8B5CF6; --tool-bg-glow: #8B5CF615;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #8B5CF635;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="#8B5CF6" fill-opacity="0.12"/>
+      <path d="M6 18L18 6M6 6L18 18" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="6" cy="6" r="2.5" fill="#8B5CF6"/>
+      <circle cx="18" cy="18" r="2.5" fill="#8B5CF6"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Stitch.ia</h4>
+                        <span class="tool-badge-meta">Integración UI/IA</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Unión y ensamblaje de componentes dinámicos generados por modelos generativos.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #8B5CF6; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="pomelli.ia" data-desc="exploración de conceptos visuales y diseño conceptual impulsado por ia." data-badge="generación creativa" data-aos="fade-up" data-aos-delay="100" style="--card-brand-color: #EC4899; --tool-bg-glow: #EC489915;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #EC489935;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="12" cy="12" r="9" fill="#EC4899" fill-opacity="0.15" stroke="#EC4899" stroke-width="1.8"/>
+      <circle cx="9" cy="10" r="2" fill="#EC4899"/>
+      <circle cx="15" cy="10" r="2" fill="#EC4899"/>
+      <path d="M8 15C9.5 17 14.5 17 16 15" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Pomelli.ia</h4>
+                        <span class="tool-badge-meta">Generación Creativa</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Exploración de conceptos visuales y diseño conceptual impulsado por IA.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #EC4899; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="ia" data-name="vento.ia" data-desc="aceleración de procesos y generación de scripts inteligentes en tiempo récord." data-badge="automatización ágil" data-aos="fade-up" data-aos-delay="150" style="--card-brand-color: #06B6D4; --tool-bg-glow: #06B6D415;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #06B6D435;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M3 8H16C17.66 8 19 6.66 19 5C19 3.34 17.66 2 16 2" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M3 13H19C20.66 13 22 14.34 22 16C22 17.66 20.66 19 19 19" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M3 18H13C14.1 18 15 18.9 15 20C15 21.1 14.1 22 13 22" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Vento.ia</h4>
+                        <span class="tool-badge-meta">Automatización Ágil</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Aceleración de procesos y generación de scripts inteligentes en tiempo récord.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Inteligencia Artificial</span>
+                    <i class='bx bx-check-shield' style="color: #06B6D4; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="automatizacion" data-name="n8n" data-desc="automatización de procesos empresariales autoalojados conectando webhooks y apis." data-badge="workflows & apis" data-aos="fade-up" data-aos-delay="200" style="--card-brand-color: #EA4B71; --tool-bg-glow: #EA4B7115;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #EA4B7135;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="7" cy="12" r="3.5" fill="#EA4B71"/>
+      <circle cx="17" cy="7" r="3" fill="#EA4B71"/>
+      <circle cx="17" cy="17" r="3" fill="#EA4B71"/>
+      <path d="M10 10.5L14.5 8M10 13.5L14.5 16" stroke="#EA4B71" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>n8n</h4>
+                        <span class="tool-badge-meta">Workflows & APIs</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Automatización de procesos empresariales autoalojados conectando webhooks y APIs.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Automatización & Datos</span>
+                    <i class='bx bx-check-shield' style="color: #EA4B71; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="automatizacion" data-name="manychat" data-desc="secuencias conversacionales automáticas para instagram, whatsapp y captación." data-badge="chatbots & ventas" data-aos="fade-up" data-aos-delay="250" style="--card-brand-color: #0084FF; --tool-bg-glow: #0084FF15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #0084FF35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M12 3C6.5 3 2 7 2 12C2 14.5 3.2 16.7 5.1 18.3L4 22L8.2 20.3C9.4 20.8 10.7 21 12 21C17.5 21 22 17 22 12C22 7 17.5 3 12 3Z" fill="#0084FF"/>
+      <circle cx="8.5" cy="12" r="1.5" fill="white"/>
+      <circle cx="12" cy="12" r="1.5" fill="white"/>
+      <circle cx="15.5" cy="12" r="1.5" fill="white"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>ManyChat</h4>
+                        <span class="tool-badge-meta">Chatbots & Ventas</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Secuencias conversacionales automáticas para Instagram, WhatsApp y captación.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Automatización & Datos</span>
+                    <i class='bx bx-check-shield' style="color: #0084FF; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="automatizacion" data-name="maker (make)" data-desc="integración multi-plataforma de crm, correos, hojas de cálculo y notificaciones." data-badge="no-code integrations" data-aos="fade-up" data-aos-delay="0" style="--card-brand-color: #6D28D9; --tool-bg-glow: #6D28D915;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #6D28D935;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="#6D28D9" fill-opacity="0.12"/>
+      <path d="M6 18V6L12 12L18 6V18" stroke="#6D28D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Maker (Make)</h4>
+                        <span class="tool-badge-meta">No-Code Integrations</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Integración multi-plataforma de CRM, correos, hojas de cálculo y notificaciones.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Automatización & Datos</span>
+                    <i class='bx bx-check-shield' style="color: #6D28D9; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="automatizacion" data-name="firebase" data-desc="bases de datos firestore en tiempo real, hosting seguro y autenticación." data-badge="backend as a service" data-aos="fade-up" data-aos-delay="50" style="--card-brand-color: #FFCA28; --tool-bg-glow: #FFCA2815;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #FFCA2835;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M4.5 17.5L7.5 3L11 9.5L4.5 17.5Z" fill="#FFA000"/>
+      <path d="M19.5 17.5L16.5 7L11 17.5H19.5Z" fill="#F57C00"/>
+      <path d="M4.5 17.5L11 21.5L19.5 17.5L12 9.5L4.5 17.5Z" fill="#FFCA28"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Firebase</h4>
+                        <span class="tool-badge-meta">Backend as a Service</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Bases de datos Firestore en tiempo real, hosting seguro y autenticación.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Automatización & Datos</span>
+                    <i class='bx bx-check-shield' style="color: #FFCA28; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="automatizacion" data-name="supabase" data-desc="postgres escalable, row-level security, almacenamiento de archivos y webhooks." data-badge="postgresql cloud" data-aos="fade-up" data-aos-delay="100" style="--card-brand-color: #3ECF8E; --tool-bg-glow: #3ECF8E15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #3ECF8E35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M13.2 21.8C12.5 22.7 11 22.2 11 21V13.8H4.2C3.1 13.8 2.6 12.4 3.4 11.7L10.8 2.2C11.5 1.3 13 1.8 13 3V10.2H19.8C20.9 10.2 21.4 11.6 20.6 12.3L13.2 21.8Z" fill="#3ECF8E"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Supabase</h4>
+                        <span class="tool-badge-meta">PostgreSQL Cloud</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Postgres escalable, Row-Level Security, almacenamiento de archivos y Webhooks.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Automatización & Datos</span>
+                    <i class='bx bx-check-shield' style="color: #3ECF8E; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="automatizacion" data-name="google ads" data-desc="estrategias de posicionamiento sem, anuncios de búsqueda y optimización de roi." data-badge="tráfico & conversión" data-aos="fade-up" data-aos-delay="150" style="--card-brand-color: #FABB05; --tool-bg-glow: #FABB0515;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #FABB0535;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <ellipse cx="6" cy="14" rx="4" ry="7" transform="rotate(-30 6 14)" fill="#FABB05"/>
+      <rect x="10" y="3" width="5" height="15" rx="2.5" transform="rotate(30 10 3)" fill="#4285F4"/>
+      <circle cx="18" cy="18" r="3" fill="#34A853"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Google Ads</h4>
+                        <span class="tool-badge-meta">Tráfico & Conversión</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Estrategias de posicionamiento SEM, anuncios de búsqueda y optimización de ROI.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Automatización & Datos</span>
+                    <i class='bx bx-check-shield' style="color: #FABB05; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="automatizacion" data-name="google calendario" data-desc="sincronización automatizada de turnos, recordatorios y agendamiento de clientes." data-badge="gestión & citas" data-aos="fade-up" data-aos-delay="200" style="--card-brand-color: #4285F4; --tool-bg-glow: #4285F415;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #4285F435;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="4" width="18" height="17" rx="3" fill="white" stroke="#4285F4" stroke-width="2"/>
+      <path d="M3 9H21" stroke="#4285F4" stroke-width="2"/>
+      <path d="M8 2V5M16 2V5" stroke="#EA4335" stroke-width="2" stroke-linecap="round"/>
+      <text x="12" y="16.5" font-family="'Outfit', sans-serif" font-size="7.5" font-weight="700" fill="#4285F4" text-anchor="middle">31</text>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Google Calendario</h4>
+                        <span class="tool-badge-meta">Gestión & Citas</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Sincronización automatizada de turnos, recordatorios y agendamiento de clientes.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Automatización & Datos</span>
+                    <i class='bx bx-check-shield' style="color: #4285F4; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="hardware" data-name="esp32" data-desc="dispositivo con wifi/bluetooth para telemetría, lectura de sensores y alertas." data-badge="microcontrolador iot" data-aos="fade-up" data-aos-delay="250" style="--card-brand-color: #E7352C; --tool-bg-glow: #E7352C15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #E7352C35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="4" y="4" width="16" height="16" rx="2" fill="#262626" stroke="#E7352C" stroke-width="1.8"/>
+      <rect x="8" y="8" width="8" height="8" rx="1" fill="#404040"/>
+      <path d="M9 2V4M12 2V4M15 2V4M9 20V22M12 20V22M15 20V22M2 9H4M2 12H4M2 15H4M20 9H22M20 12H22M20 15H22" stroke="#E7352C" stroke-width="1.5"/>
+      <circle cx="10" cy="10" r="0.8" fill="#5DE0E6"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>ESP32</h4>
+                        <span class="tool-badge-meta">Microcontrolador IoT</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Dispositivo con WiFi/Bluetooth para telemetría, lectura de sensores y alertas.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Hardware & IoT</span>
+                    <i class='bx bx-check-shield' style="color: #E7352C; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="hardware" data-name="raspberry pi" data-desc="sbc para hubs domóticos, servidores locales, procesamiento perimetral y bots." data-badge="servidor local & sbc" data-aos="fade-up" data-aos-delay="0" style="--card-brand-color: #C51A4A; --tool-bg-glow: #C51A4A15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #C51A4A35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M12 6C10 4 8 4 6 5C6 7 7 9 9 9.5" stroke="#467D25" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M12 6C14 4 16 4 18 5C18 7 17 9 15 9.5" stroke="#467D25" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="8" cy="12" r="2.5" fill="#C51A4A"/>
+      <circle cx="16" cy="12" r="2.5" fill="#C51A4A"/>
+      <circle cx="12" cy="13" r="2.8" fill="#C51A4A"/>
+      <circle cx="9.5" cy="16.5" r="2.2" fill="#C51A4A"/>
+      <circle cx="14.5" cy="16.5" r="2.2" fill="#C51A4A"/>
+      <circle cx="12" cy="19" r="1.8" fill="#C51A4A"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Raspberry Pi</h4>
+                        <span class="tool-badge-meta">Servidor Local & SBC</span>
+                    </div>
+                </div>
+                <p class="tool-desc">SBC para hubs domóticos, servidores locales, procesamiento perimetral y bots.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Hardware & IoT</span>
+                    <i class='bx bx-check-shield' style="color: #C51A4A; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="hardware" data-name="arduino" data-desc="certificado utn: circuitos inteligentes, relés, alarmas y actuadores automáticos." data-badge="electrónica & sensores" data-aos="fade-up" data-aos-delay="50" style="--card-brand-color: #00979D; --tool-bg-glow: #00979D15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #00979D35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="7.5" cy="12" r="4.5" stroke="#00979D" stroke-width="2.2" fill="none"/>
+      <circle cx="16.5" cy="12" r="4.5" stroke="#00979D" stroke-width="2.2" fill="none"/>
+      <path d="M6 12H9M15 12H18M16.5 10.5V13.5" stroke="#00979D" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Arduino</h4>
+                        <span class="tool-badge-meta">Electrónica & Sensores</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Certificado UTN: Circuitos inteligentes, relés, alarmas y actuadores automáticos.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Hardware & IoT</span>
+                    <i class='bx bx-check-shield' style="color: #00979D; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="diseno" data-name="canva" data-desc="diseño publicitario de alto impacto, banners promocionales y branding social." data-badge="identidad visual" data-aos="fade-up" data-aos-delay="100" style="--card-brand-color: #00C4CC; --tool-bg-glow: #00C4CC15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #00C4CC35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="12" cy="12" r="10" fill="#00C4CC"/>
+      <path d="M14.5 8C13.5 7.2 12 7.2 10.8 7.8C9.2 8.6 8 10.4 8 12.8C8 15.2 9.5 16.8 11.5 16.8C13.2 16.8 14.5 15.6 15.2 14.2" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Canva</h4>
+                        <span class="tool-badge-meta">Identidad Visual</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Diseño publicitario de alto impacto, banners promocionales y branding social.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Diseño & Creatividad</span>
+                    <i class='bx bx-check-shield' style="color: #00C4CC; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="diseno" data-name="antigravity" data-desc="creación de assets visuales disruptivos, composición moderna y estética vanguardista." data-badge="diseño generativo" data-aos="fade-up" data-aos-delay="150" style="--card-brand-color: #6366F1; --tool-bg-glow: #6366F115;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #6366F135;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="3" width="18" height="18" rx="6" fill="#6366F1" fill-opacity="0.12"/>
+      <path d="M12 4L19 18H5L12 4Z" stroke="#6366F1" stroke-width="2.2" stroke-linejoin="round"/>
+      <circle cx="12" cy="13" r="2.5" fill="#6366F1"/>
+      <path d="M8 20H16" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Antigravity</h4>
+                        <span class="tool-badge-meta">Diseño Generativo</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Creación de assets visuales disruptivos, composición moderna y estética vanguardista.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Diseño & Creatividad</span>
+                    <i class='bx bx-check-shield' style="color: #6366F1; font-size: 1.6rem;"></i>
+                </div>
+            </div>
+            <div class="tool-card" data-category="diseno" data-name="pinterest" data-desc="análisis de tendencias visuales, paletas cromáticas y benchmarks de ux/ui." data-badge="curaduría & moodboards" data-aos="fade-up" data-aos-delay="200" style="--card-brand-color: #BD081C; --tool-bg-glow: #BD081C15;">
+                <div class="tool-card-header">
+                    <div class="tool-logo-container" style="border: 1px solid #BD081C35;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <circle cx="12" cy="12" r="10" fill="#BD081C"/>
+      <path d="M12 4.5C7.86 4.5 4.5 7.86 4.5 12C4.5 15.17 6.47 17.89 9.27 19C9.21 18.4 9.16 17.48 9.3 16.89L10.23 12.94C10.23 12.94 9.99 12.46 9.99 11.75C9.99 10.64 10.63 9.81 11.43 9.81C12.11 9.81 12.44 10.32 12.44 10.93C12.44 11.62 12 12.65 11.78 13.58C11.59 14.38 12.18 15.03 12.97 15.03C14.4 15.03 15.5 13.52 15.5 11.36C15.5 9.45 14.13 8.11 12.16 8.11C9.88 8.11 8.55 9.82 8.55 11.72C8.55 12.41 8.81 13.15 9.14 13.55C9.21 13.63 9.22 13.7 9.2 13.79L8.85 15.22C8.79 15.46 8.65 15.52 8.41 15.41C6.82 14.67 5.84 12.38 5.84 10.55C5.84 7.64 7.95 5 12.28 5C15.77 5 18.48 7.49 18.48 10.82C18.48 14.28 16.3 17.09 13.27 17.09C12.26 17.09 11.31 16.56 10.98 15.93L10.43 18.03C10.23 18.8 9.69 19.76 9.3 20.38C10.15 20.64 11.06 20.78 12 20.78C16.84 20.78 20.78 16.84 20.78 12C20.78 7.16 16.84 4.5 12 4.5Z" fill="white"/>
+    </svg>
+                    </div>
+                    <div class="tool-title-group">
+                        <h4>Pinterest</h4>
+                        <span class="tool-badge-meta">Curaduría & Moodboards</span>
+                    </div>
+                </div>
+                <p class="tool-desc">Análisis de tendencias visuales, paletas cromáticas y benchmarks de UX/UI.</p>
+                <div class="tool-category-footer">
+                    <span class="tool-category-tag">Diseño & Creatividad</span>
+                    <i class='bx bx-check-shield' style="color: #BD081C; font-size: 1.6rem;"></i>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -270,7 +993,7 @@
             <!-- Proyecto 1: Centro Climático -->
             <div class="project-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="project-img">
-                    <img src="/Imagenes/Captura de pantalla (17).png" alt="Centro Climático" referrerPolicy="no-referrer">
+                    <img src="Imagenes/Captura de pantalla (17).png" alt="Centro Climático" referrerPolicy="no-referrer">
                     <div class="project-overlay">
                         <span style="color: white; font-size: 1.3rem; font-weight: 600;"><i class='bx bx-show'></i> Ver demo en vivo</span>
                     </div>
@@ -300,7 +1023,7 @@
             <!-- Proyecto 2: Tienda Va.Bahia -->
             <div class="project-item" data-aos="fade-up" data-aos-delay="150">
                 <div class="project-img">
-                    <img src="/Imagenes/Captura de pantalla (28).png" alt="Tienda Va.Bahia" referrerPolicy="no-referrer">
+                    <img src="Imagenes/Captura de pantalla (28).png" alt="Tienda Va.Bahia" referrerPolicy="no-referrer">
                     <div class="project-overlay">
                         <span style="color: white; font-size: 1.3rem; font-weight: 600;"><i class='bx bx-show'></i> Ver tienda en vivo</span>
                     </div>
@@ -330,7 +1053,7 @@
             <!-- Proyecto 3: Frecuencia Mística -->
             <div class="project-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="project-img">
-                    <img src="/Imagenes/Captura de pantalla (27).png" alt="Frecuencia Mística" referrerPolicy="no-referrer">
+                    <img src="Imagenes/Captura de pantalla (27).png" alt="Frecuencia Mística" referrerPolicy="no-referrer">
                     <div class="project-overlay">
                         <span style="color: white; font-size: 1.3rem; font-weight: 600;"><i class='bx bx-show'></i> Ver landing page</span>
                     </div>
@@ -360,7 +1083,7 @@
             <!-- Proyecto 4: FitQuest -->
             <div class="project-item" data-aos="fade-up" data-aos-delay="250">
                 <div class="project-img">
-                    <img src="/Imagenes/WhatsApp Image 2026-05-17 at 18.14.24.jpeg" alt="FitQuest" referrerPolicy="no-referrer">
+                    <img src="Imagenes/WhatsApp Image 2026-05-17 at 18.14.24.jpeg" alt="FitQuest" referrerPolicy="no-referrer">
                     <div class="project-overlay">
                         <span style="color: white; font-size: 1.3rem; font-weight: 600;"><i class='bx bx-show'></i> Ver plataforma</span>
                     </div>
@@ -390,7 +1113,7 @@
             <!-- Proyecto 5: Alarma IoT ESP32 -->
             <div class="project-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="project-img">
-                    <img src="/Imagenes/WhatsApp Image 2025-10-13 at 08.44.38.jpeg" alt="Alarma de Incendio IoT" referrerPolicy="no-referrer">
+                    <img src="Imagenes/WhatsApp Image 2025-10-13 at 08.44.38.jpeg" alt="Alarma de Incendio IoT" referrerPolicy="no-referrer">
                     <div class="project-overlay">
                         <span style="color: white; font-size: 1.3rem; font-weight: 600;"><i class='bx bx-file'></i> Ver documentación técnica</span>
                     </div>
@@ -409,7 +1132,7 @@
                         <strong>Resultado:</strong> Notificaciones críticas instantáneas con latencia menor a 2 segundos en incidentes.
                     </div>
                     <div class="project-links-row">
-                        <a href="/PDF/GuardiaFire.pdf.pdf" target="_blank" class="project-link-primary">
+                        <a href="PDF/GuardiaFire.pdf.pdf" target="_blank" class="project-link-primary">
                             <span>Ficha Técnica PDF</span>
                             <i class='bx bx-file-blank'></i>
                         </a>
@@ -434,10 +1157,10 @@
                     <span class="pricing-desc">Soluciones a medida para negocios</span>
                 </div>
                 <ul>
-                    <li>Tienda online <strong>$85.000</strong></li>
-                    <li>Web a medida <strong>$120.000</strong></li>
-                    <li>Portafolio profesional <strong>$75.000</strong></li>
-                    <li>Landing page de alta conversión <strong>$50.000</strong></li>
+                    <li>Tienda online <strong>5.000</strong></li>
+                    <li>Web a medida <strong>20.000</strong></li>
+                    <li>Portafolio profesional <strong>5.000</strong></li>
+                    <li>Landing page de alta conversión <strong>0.000</strong></li>
                 </ul>
                 <a href="https://wa.me/5493454945349?text=Hola%20Juan,%20quisiera%20consultar%20por%20un%20servicio%20de%20Desarrollo%20Web." target="_blank" class="btn btn-outline">
                     <i class='bx bxl-whatsapp'></i> Consultar Plan
@@ -452,10 +1175,10 @@
                     <span class="pricing-desc">Packs integrales con todo incluido</span>
                 </div>
                 <ul>
-                    <li>Combo Emprendedor <strong>$95.000</strong></li>
-                    <li>Tienda Web Completa <strong>$130.000</strong></li>
-                    <li>Marca Full (Web + Identidad) <strong>$160.000</strong></li>
-                    <li>Menú Digital Interactivo + QR <strong>$18.000</strong></li>
+                    <li>Combo Emprendedor <strong>5.000</strong></li>
+                    <li>Tienda Web Completa <strong>30.000</strong></li>
+                    <li>Marca Full (Web + Identidad) <strong>60.000</strong></li>
+                    <li>Menú Digital Interactivo + QR <strong>8.000</strong></li>
                 </ul>
                 <a href="https://wa.me/5493454945349?text=Hola%20Juan,%20quisiera%20consultar%20por%20los%20Combos%20Fijos." target="_blank" class="btn">
                     <i class='bx bxl-whatsapp'></i> Elegir Combo
@@ -469,10 +1192,10 @@
                     <span class="pricing-desc">Impulso de marca y presencia</span>
                 </div>
                 <ul>
-                    <li>Posts para redes (pack) <strong>$25.000</strong></li>
-                    <li>Logo + manual de identidad <strong>$65.000</strong></li>
-                    <li>Diseño de CV o Portafolio <strong>$55.000</strong></li>
-                    <li>Presentaciones de impacto <strong>$45.000</strong></li>
+                    <li>Posts para redes (pack) <strong>5.000</strong></li>
+                    <li>Logo + manual de identidad <strong>5.000</strong></li>
+                    <li>Diseño de CV o Portafolio <strong>5.000</strong></li>
+                    <li>Presentaciones de impacto <strong>5.000</strong></li>
                 </ul>
                 <a href="https://wa.me/5493454945349?text=Hola%20Juan,%20quisiera%20consultar%20por%20servicios%20de%20Marketing%20y%20Dise%C3%B1o." target="_blank" class="btn btn-outline">
                     <i class='bx bxl-whatsapp'></i> Consultar Plan
@@ -495,7 +1218,7 @@
                 </div>
                 <h3>Programación Arduino</h3>
                 <p>Egresado en 2023 · Universidad Tecnológica Nacional (UTN)</p>
-                <a href="/PDF/Figueredo%20Guardia.pdf" target="_blank" class="btn-cert">
+                <a href="PDF/Figueredo Guardia.pdf" target="_blank" class="btn-cert">
                     <i class='bx bx-file'></i> Ver Certificado
                 </a>
             </div>
@@ -506,7 +1229,7 @@
                 </div>
                 <h3>Tutoría de Pares</h3>
                 <p>Egresado en 2024 · Universidad Tecnológica Nacional (UTN)</p>
-                <a href="/PDF/Figueredo%20Guardia_firmado%20(1).pdf" target="_blank" class="btn-cert">
+                <a href="PDF/Figueredo Guardia_firmado (1).pdf" target="_blank" class="btn-cert">
                     <i class='bx bx-file'></i> Ver Certificado
                 </a>
             </div>
@@ -517,7 +1240,7 @@
                 </div>
                 <h3>Orientación Académica</h3>
                 <p>Egresado en 2025 · Universidad Tecnológica Nacional (UTN)</p>
-                <a href="/PDF/Certificados%20-%20Orientaciones%20-%20Figueredo%20Guardia_firmado.pdf" target="_blank" class="btn-cert">
+                <a href="PDF/Certificados - Orientaciones - Figueredo Guardia_firmado.pdf" target="_blank" class="btn-cert">
                     <i class='bx bx-file'></i> Ver Certificado
                 </a>
             </div>
@@ -583,7 +1306,8 @@
         <span class="whatsapp-tooltip">¡Escríbeme por WhatsApp!</span>
     </a>
 
-    <!-- Scripts con AOS y Lógica de Renderizado -->
-    <script type="module" src="/script.js"></script>
+    <!-- Scripts con AOS y Lógica de Renderizado Vanilla Compatible -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>

@@ -1,25 +1,25 @@
-// script.js - Lógica interactiva, animaciones y renderizado del Stack Tecnológico
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { techStackData } from './techStack.js';
+// script.js - Lógica interactiva, animaciones y filtrado para Juan Figueredo Guardia
 
-// === INICIALIZACIÓN DE AOS ===
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-        duration: 750,
-        easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
-        once: true,
-        offset: 50,
-        delay: 50,
-    });
+    // 1. Inicializar AOS (Animate On Scroll) con verificación segura
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 750,
+            easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+            once: true,
+            offset: 50,
+            delay: 50,
+        });
+    }
 
+    // 2. Iniciar componentes
     initNavigation();
     initTypingEffect();
     initTechStackSection();
     initSmoothScroll();
 });
 
-// === 1. NAVEGACIÓN Y MENU RESPONSIVO ===
+// === 1. NAVEGACIÓN Y MENÚ RESPONSIVO ===
 function initNavigation() {
     const menuIcon = document.querySelector('#menu-icon');
     const navbar = document.querySelector('.nav-menu');
@@ -27,7 +27,6 @@ function initNavigation() {
     const navLinks = document.querySelectorAll('.nav-menu a:not(.header-cta)');
     const sections = document.querySelectorAll('section');
 
-    // Create backdrop overlay for mobile menu if not exists
     let overlay = document.querySelector('.nav-overlay');
     if (!overlay) {
         overlay = document.createElement('div');
@@ -59,12 +58,10 @@ function initNavigation() {
     window.addEventListener('scroll', () => {
         const top = window.scrollY;
 
-        // Sticky header
         if (header) {
             header.classList.toggle('sticky', top > 50);
         }
 
-        // Active link detector
         sections.forEach(sec => {
             const offset = sec.offsetTop - 160;
             const height = sec.offsetHeight;
@@ -78,13 +75,12 @@ function initNavigation() {
         });
     }, { passive: true });
 
-    // Close menu on link click
     navLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 }
 
-// === 2. EFECTO TYPING TEXT MODERNO Y SUAVE ===
+// === 2. EFECTO TYPING TEXT MODERNO Y CONTINUO ===
 function initTypingEffect() {
     const typingElement = document.querySelector('.typing-text');
     if (!typingElement) return;
@@ -97,9 +93,9 @@ function initTypingEffect() {
     ];
 
     let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 90;
+    let charIndex = phrases[0].length; // Inicia con la primera frase completa
+    let isDeleting = true;
+    let typingSpeed = 2200; // Pausa de 2.2s para leer la primera frase
 
     function type() {
         const currentPhrase = phrases[phraseIndex];
@@ -107,112 +103,108 @@ function initTypingEffect() {
         if (isDeleting) {
             typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
             charIndex--;
-            typingSpeed = 45;
+            typingSpeed = 40;
         } else {
             typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
             charIndex++;
-            typingSpeed = 95;
+            typingSpeed = 85;
         }
 
         if (!isDeleting && charIndex === currentPhrase.length) {
             isDeleting = true;
-            typingSpeed = 1800; // Pausa al terminar de escribir la frase
+            typingSpeed = 2000; // Pausa con la frase completa en pantalla
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             phraseIndex = (phraseIndex + 1) % phrases.length;
-            typingSpeed = 400; // Breve pausa antes de escribir la siguiente
+            typingSpeed = 350; // Breve pausa antes de escribir la siguiente frase
         }
 
         setTimeout(type, typingSpeed);
     }
 
-    type();
+    // Iniciar animación tras la lectura de la primera frase
+    setTimeout(type, typingSpeed);
 }
 
-// === 3. SECCIÓN STACK TECNOLÓGICO Y HERRAMIENTAS ===
+// === 3. SECCIÓN STACK TECNOLÓGICO: FILTRADO Y BÚSQUEDA ===
 function initTechStackSection() {
     const techGrid = document.querySelector('#tech-grid');
     const filterButtons = document.querySelectorAll('.filter-btn');
     const searchInput = document.querySelector('#tech-search-input');
+    const cards = document.querySelectorAll('.tool-card');
 
-    if (!techGrid) return;
+    if (!techGrid || cards.length === 0) return;
 
     let currentCategory = 'all';
     let searchQuery = '';
 
-    // Render cards function
-    function renderTechCards() {
-        const filtered = techStackData.filter(tool => {
-            const matchesCat = currentCategory === 'all' || tool.category === currentCategory;
+    function filterCards() {
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            const cardName = card.getAttribute('data-name') || '';
+            const cardDesc = card.getAttribute('data-desc') || '';
+            const cardBadge = card.getAttribute('data-badge') || '';
+
+            const matchesCategory = currentCategory === 'all' || cardCat === currentCategory;
             const matchesSearch = searchQuery === '' || 
-                tool.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                tool.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                tool.badge.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                tool.categoryLabel.toLowerCase().includes(searchQuery.toLowerCase());
-            return matchesCat && matchesSearch;
+                cardName.includes(searchQuery) || 
+                cardDesc.includes(searchQuery) || 
+                cardBadge.includes(searchQuery);
+
+            if (matchesCategory && matchesSearch) {
+                card.style.display = 'flex';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(15px)';
+            }
         });
 
-        if (filtered.length === 0) {
-            techGrid.innerHTML = `
-                <div class="no-tools-found">
-                    <i class='bx bx-search-alt'></i>
-                    <p>No se encontraron herramientas para "<strong>${escapeHtml(searchQuery)}</strong>".</p>
-                </div>
+        // Manejo de estado vacío
+        let noResultsMsg = techGrid.querySelector('.no-tools-found');
+        if (visibleCount === 0) {
+            if (!noResultsMsg) {
+                noResultsMsg = document.createElement('div');
+                noResultsMsg.className = 'no-tools-found';
+                techGrid.appendChild(noResultsMsg);
+            }
+            noResultsMsg.innerHTML = `
+                <i class='bx bx-search-alt'></i>
+                <p>No se encontraron herramientas para "<strong>${escapeHtml(searchQuery)}</strong>".</p>
             `;
-            return;
+            noResultsMsg.style.display = 'block';
+        } else if (noResultsMsg) {
+            noResultsMsg.style.display = 'none';
         }
 
-        techGrid.innerHTML = filtered.map((tool, index) => {
-            return `
-                <div class="tool-card" 
-                     data-aos="fade-up" 
-                     data-aos-delay="${(index % 6) * 60}"
-                     style="--card-brand-color: ${tool.color}; --tool-bg-glow: ${hexToRgba(tool.color, 0.08)};">
-                    <div class="tool-card-header">
-                        <div class="tool-logo-container" style="border: 1px solid ${hexToRgba(tool.color, 0.2)};">
-                            ${tool.svg}
-                        </div>
-                        <div class="tool-title-group">
-                            <h4>${escapeHtml(tool.name)}</h4>
-                            <span class="tool-badge-meta">${escapeHtml(tool.badge)}</span>
-                        </div>
-                    </div>
-                    <p class="tool-desc">${escapeHtml(tool.desc)}</p>
-                    <div class="tool-category-footer">
-                        <span class="tool-category-tag">${escapeHtml(tool.categoryLabel)}</span>
-                        <i class='bx bx-check-shield' style="color: ${tool.color}; font-size: 1.6rem;"></i>
-                    </div>
-                </div>
-            `;
-        }).join('');
-
-        // Refresh AOS so newly rendered cards animate smoothly
-        AOS.refresh();
+        if (typeof AOS !== 'undefined') {
+            AOS.refresh();
+        }
     }
 
-    // Category filter events
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             filterButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentCategory = btn.getAttribute('data-category');
-            renderTechCards();
+            filterCards();
         });
     });
 
-    // Search input event
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value.trim();
-            renderTechCards();
+            searchQuery = e.target.value.trim().toLowerCase();
+            filterCards();
         });
     }
-
-    // Initial render
-    renderTechCards();
 }
 
-// === 4. SMOOTH SCROLL PARA ENLACES ANCLA ===
+// === 4. SMOOTH SCROLL PARA ANCLAS ===
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -235,7 +227,6 @@ function initSmoothScroll() {
     });
 }
 
-// === UTILIDADES AUXILIARES ===
 function escapeHtml(string) {
     const entityMap = {
         '&': '&amp;',
@@ -245,15 +236,4 @@ function escapeHtml(string) {
         "'": '&#39;'
     };
     return String(string).replace(/[&<>"']/g, s => entityMap[s]);
-}
-
-function hexToRgba(hex, alpha) {
-    hex = hex.replace('#', '');
-    if (hex.length === 3) {
-        hex = hex.split('').map(c => c + c).join('');
-    }
-    const r = parseInt(hex.substring(0, 2), 16) || 0;
-    const g = parseInt(hex.substring(2, 4), 16) || 0;
-    const b = parseInt(hex.substring(4, 6), 16) || 0;
-    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
