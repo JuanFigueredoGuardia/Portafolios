@@ -104,7 +104,7 @@ function initTypingEffect() {
     const phrases = [
         'Desarrollador Web Full-Stack',
         'Especialista en Automatización & IA',
-        'Ingeniería de Hardware & IoT',
+        'Desarrollo de Hardware & IoT',
         'Creador de Soluciones Digitales'
     ];
 

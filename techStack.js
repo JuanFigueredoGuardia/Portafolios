@@ -233,7 +233,7 @@ export const techStackData = [
     category: 'ia',
     categoryLabel: 'Inteligencia Artificial',
     badge: 'OpenAI Prompting',
-    desc: 'Ingeniería de prompts, generación de lógica de negocio y automatización de contenido.',
+    desc: 'Diseño avanzado de prompts, generación de lógica de negocio y automatización de contenido.',
     color: '#10A37F',
     svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
       <circle cx="12" cy="12" r="10" fill="#10A37F" fill-opacity="0.15"/>
@@ -275,7 +275,7 @@ export const techStackData = [
     category: 'ia',
     categoryLabel: 'Inteligencia Artificial',
     badge: 'Investigación & Docs',
-    desc: 'Síntesis de fuentes técnicas, resúmenes estructurados y preparación de proyectos.',
+    desc: 'Síntesis de documentación y fuentes de consulta, resúmenes estructurados y preparación de proyectos.',
     color: '#4285F4',
     svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
       <rect x="4" y="3" width="16" height="18" rx="3" fill="#4285F4" fill-opacity="0.12" stroke="#4285F4" stroke-width="1.8"/>
