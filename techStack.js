@@ -443,6 +443,54 @@ export const techStackData = [
       <text x="12" y="16.5" font-family="'Outfit', sans-serif" font-size="7.5" font-weight="700" fill="#4285F4" text-anchor="middle">31</text>
     </svg>`
   },
+  {
+    id: 'google-sheets',
+    name: 'Google Sheets',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Gestión de Datos & Fórmulas',
+    desc: 'Modelado de hojas de cálculo, automatización de balances, control de datos y dashboards dinámicos.',
+    color: '#0F9D58',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M14.5 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V7.5L14.5 2Z" fill="#0F9D58"/>
+      <path d="M14 2V8H20L14 2Z" fill="#87CEAC"/>
+      <rect x="7" y="11" width="10" height="7.5" rx="1" fill="#0B8043"/>
+      <path d="M7 13.5H17M7 16H17M11 11V18.5" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+    </svg>`
+  },
+  {
+    id: 'google-appsheet',
+    name: 'Google AppSheet',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Apps No-Code & Móvil',
+    desc: 'Creación ágil de aplicaciones interactivas multiplataforma conectadas directamente a bases de datos y hojas de cálculo.',
+    color: '#1A73E8',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect x="3" y="3" width="18" height="18" rx="4.5" fill="#1A73E8" fill-opacity="0.12" stroke="#1A73E8" stroke-width="1.8"/>
+      <rect x="6" y="6.5" width="12" height="3" rx="1" fill="#1A73E8"/>
+      <rect x="6" y="11.5" width="5" height="6" rx="1.2" fill="#34A853"/>
+      <rect x="13" y="11.5" width="5" height="6" rx="1.2" fill="#FBBC04"/>
+      <circle cx="8.5" cy="14.5" r="1.2" fill="white"/>
+      <path d="M14.5 14.5L15.5 15.5L17 13.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`
+  },
+  {
+    id: 'google-apps-script',
+    name: 'Google Apps Script',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Automatización & Macros',
+    desc: 'Programación de scripts en la nube, triggers automáticos, webhooks y conexión fluida entre herramientas de Google Workspace.',
+    color: '#4285F4',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2Z" fill="#4285F4"/>
+      <path d="M14 2V8H20L14 2Z" fill="#A1C2FA"/>
+      <rect x="6.5" y="11" width="11" height="8" rx="1.5" fill="#1A73E8"/>
+      <path d="M8.5 13.5L10.5 15L8.5 16.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12 16.5H15" stroke="#FBBC04" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>`
+  },
 
   // --- HARDWARE E IOT ---
   {
