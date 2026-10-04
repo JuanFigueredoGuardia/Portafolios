@@ -1367,6 +1367,19 @@ section {
     box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
 }
 
+.btn-linkedin {
+    background: #0A66C2;
+    color: var(--white);
+    box-shadow: 0 8px 24px rgba(10, 102, 194, 0.3);
+}
+
+.btn-linkedin:hover {
+    background: #004182;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(10, 102, 194, 0.45);
+}
+
 .contact-direct-info {
     display: flex;
     justify-content: center;
@@ -1378,10 +1391,18 @@ section {
     color: var(--text-muted);
 }
 
-.contact-direct-info div {
+.contact-direct-info div,
+.contact-direct-info a {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.contact-direct-info a:hover {
+    color: #0A66C2;
 }
 
 .contact-direct-info i {
