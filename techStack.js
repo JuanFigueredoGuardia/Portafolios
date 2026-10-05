@@ -120,6 +120,33 @@ export const techStackData = [
       <path d="M12.13 22C17.12 22 16.81 19.84 16.81 19.84L16.8 17.6H11.8V16.85H18.83C18.83 16.85 22 17.21 22 12.16C22 7.11 19.22 7.34 19.22 7.34H17.56V9.67C17.56 9.67 17.65 12.47 14.82 12.47H9.81C9.81 12.47 7.11 12.38 7.11 15.03V19.92C7.11 19.92 6.75 22 12.13 22ZM14.44 20.49C13.86 20.49 13.4 20.02 13.4 19.44C13.4 18.86 13.86 18.4 14.44 18.4C15.02 18.4 15.48 18.86 15.48 19.44C15.48 20.02 15.02 20.49 14.44 20.49Z" fill="#FFD438"/>
     </svg>`
   },
+  {
+    id: 'flutter',
+    name: 'Flutter',
+    category: 'desarrollo',
+    categoryLabel: 'Desarrollo',
+    badge: 'Apps Multiplataforma',
+    desc: 'Desarrollo de aplicaciones nativas y multiplataforma de alto rendimiento para Android, iOS y Web con una sola base de código.',
+    color: '#02569B',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M14.31 2.5L5.5 11.31L8.35 14.16L19.98 2.5H14.31Z" fill="#42A5F5"/>
+      <path d="M14.35 11.23L8.35 17.23L11.2 20.08L14.35 16.93L17.2 20.08L20.05 17.23L17.2 14.08L19.98 11.23H14.35Z" fill="#01579B"/>
+      <path d="M11.2 20.08L14.35 16.93L17.2 20.08L14.35 22.93L11.2 20.08Z" fill="#29B6F6"/>
+    </svg>`
+  },
+  {
+    id: 'nodejs',
+    name: 'Node.js',
+    category: 'desarrollo',
+    categoryLabel: 'Desarrollo',
+    badge: 'Runtime & APIs Backend',
+    desc: 'Entorno de ejecución asíncrono para JavaScript del lado del servidor, creación de microservicios y APIs REST escalables.',
+    color: '#339933',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <path d="M12 2L20.66 7V17L12 22L3.34 17V7L12 2Z" fill="#339933"/>
+      <path d="M8.5 7.5V16.5M8.5 10.5L15.5 16.5M15.5 7.5V16.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`
+  },
 
   // --- ENTORNOS Y CONTROL DE VERSIONES ---
   {
@@ -343,6 +370,69 @@ export const techStackData = [
       <path d="M3 18H13C14.1 18 15 18.9 15 20C15 21.1 14.1 22 13 22" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round"/>
     </svg>`
   },
+  {
+    id: 'grok',
+    name: 'Grok',
+    category: 'ia',
+    categoryLabel: 'Inteligencia Artificial',
+    badge: 'Modelo LLM xAI',
+    desc: 'Modelo de inteligencia artificial conversacional desarrollado por xAI con razonamiento rápido y acceso a datos en tiempo real.',
+    color: '#1E293B',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#0A0F1D"/>
+      <path d="M6 18L18 6" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M6 13L13 6" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M11 18L18 11" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="17.5" cy="6.5" r="1.5" fill="#FFFFFF"/>
+    </svg>`
+  },
+  {
+    id: 'sora2',
+    name: 'Sora 2',
+    category: 'ia',
+    categoryLabel: 'Inteligencia Artificial',
+    badge: 'Generación de Video IA',
+    desc: 'Generación y síntesis de video hiperrealista a partir de descripciones textuales con física avanzada y consistencia temporal.',
+    color: '#7928CA',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#110E24"/>
+      <circle cx="12" cy="12" r="7.5" stroke="#7928CA" stroke-width="2"/>
+      <circle cx="12" cy="12" r="4" stroke="#00DFD8" stroke-width="2"/>
+      <path d="M12 4.5L14 12L20 12" stroke="#FF0080" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="12" cy="12" r="2" fill="#FFFFFF"/>
+    </svg>`
+  },
+  {
+    id: 'heygen',
+    name: 'HeyGen',
+    category: 'ia',
+    categoryLabel: 'Inteligencia Artificial',
+    badge: 'Avatares & Video IA',
+    desc: 'Producción de videos con avatares fotorrealistas con IA, clonación de voz de alta precisión y traducción sincronizada en múltiples idiomas.',
+    color: '#6366F1',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#1E1B4B"/>
+      <path d="M7 6V18M17 6V18M7 12H17" stroke="#818CF8" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="12" cy="7.5" r="2.5" fill="#A855F7"/>
+      <path d="M12 10.5C9.5 10.5 8 12.5 8 14" stroke="#A855F7" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>`
+  },
+  {
+    id: 'gamma',
+    name: 'Gamma.ia',
+    category: 'ia',
+    categoryLabel: 'Inteligencia Artificial',
+    badge: 'Docs & Slides con IA',
+    desc: 'Creación interactiva de presentaciones profesionales, documentos ejecutivos y páginas web mediante asistencia conversacional con IA.',
+    color: '#EC4899',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#240D1D"/>
+      <rect x="5" y="6" width="14" height="10" rx="2" stroke="#EC4899" stroke-width="1.8" fill="none"/>
+      <path d="M8 10H14M8 13H11" stroke="#F472B6" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M9 16L7 20M15 16L17 20" stroke="#EC4899" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="15.5" cy="9.5" r="1.5" fill="#FBBF24"/>
+    </svg>`
+  },
 
   // --- AUTOMATIZACIÓN Y DATOS ---
   {
@@ -491,6 +581,84 @@ export const techStackData = [
       <path d="M12 16.5H15" stroke="#FBBC04" stroke-width="1.5" stroke-linecap="round"/>
     </svg>`
   },
+  {
+    id: 'google-resenas',
+    name: 'Google Reseñas',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Reputación & SEO Local',
+    desc: 'Gestión y automatización de opiniones en Google, fidelización de clientes, reputación digital y optimización de posicionamiento local.',
+    color: '#FBBC05',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#FFF9E6"/>
+      <path d="M12 4L14.2 8.5L19 9.2L15.5 12.6L16.3 17.5L12 15.2L7.7 17.5L8.5 12.6L5 9.2L9.8 8.5L12 4Z" fill="#FBBC05"/>
+      <path d="M12 7.5L13.3 10.2L16.2 10.6L14.1 12.7L14.6 15.6L12 14.2L9.4 15.6L9.9 12.7L7.8 10.6L10.7 10.2L12 7.5Z" fill="#EA4335" opacity="0.3"/>
+      <circle cx="12" cy="12" r="1.5" fill="#4285F4"/>
+    </svg>`
+  },
+  {
+    id: 'google-page',
+    name: 'Google Page',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Presencia Digital & Ficha',
+    desc: 'Creación y sincronización de sitios web de Google y perfil de negocio comercial en Google Maps para captar prospectos en piloto automático.',
+    color: '#4285F4',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#E8F0FE"/>
+      <path d="M4 8L12 4L20 8V10H4V8Z" fill="#4285F4"/>
+      <path d="M5 10H8V17H5V10ZM10 10H14V17H10V10ZM16 10H19V17H16V10Z" fill="#34A853"/>
+      <path d="M3 17H21V19H3V17Z" fill="#EA4335"/>
+    </svg>`
+  },
+  {
+    id: 'google-form',
+    name: 'Google Forms',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Formularios & Datos',
+    desc: 'Estructuración de encuestas inteligentes, captura automatizada de clientes y sincronización instantánea con bases de datos y Google Sheets.',
+    color: '#7248B9',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#F3E8FF"/>
+      <rect x="5" y="4" width="14" height="16" rx="2" fill="#7248B9"/>
+      <rect x="9" y="3" width="6" height="2.5" rx="1" fill="#9333EA"/>
+      <rect x="8" y="8" width="8" height="1.8" rx="0.9" fill="white"/>
+      <circle cx="8" cy="12" r="1" fill="white"/>
+      <rect x="10.5" y="11.2" width="5.5" height="1.6" rx="0.8" fill="white"/>
+      <circle cx="8" cy="15" r="1" fill="white"/>
+      <rect x="10.5" y="14.2" width="5.5" height="1.6" rx="0.8" fill="white"/>
+    </svg>`
+  },
+  {
+    id: 'office',
+    name: 'Microsoft Office (365)',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Productividad & Suite',
+    desc: 'Automatización avanzada en Excel, macros, gestión documental con Word y presentaciones dinámicas corporativas integradas en la nube.',
+    color: '#D83B01',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#FDF3E7"/>
+      <path d="M15 5.5L19 7.8V16.2L15 18.5V5.5Z" fill="#EB3C00"/>
+      <path d="M15 5.5L9 3L5 4.8V19.2L9 21L15 18.5V5.5Z" fill="#FF8C00"/>
+      <path d="M9 7L13 8.5V15.5L9 17V7Z" fill="#FFFFFF"/>
+    </svg>`
+  },
+  {
+    id: 'obsidian',
+    name: 'Obsidian',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Gestión del Conocimiento',
+    desc: 'Estructuración de base de conocimiento enlazada en Markdown, documentación de arquitecturas y gestión del pensamiento productivo.',
+    color: '#7C3AED',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#18132B"/>
+      <path d="M12 3L18 8L16 19L12 21L8 19L6 8L12 3Z" stroke="#A78BFA" stroke-width="1.8" fill="#4C1D95"/>
+      <path d="M12 3V21M12 3L8 14L12 21M12 3L16 14L12 21" stroke="#C4B5FD" stroke-width="1.2"/>
+    </svg>`
+  },
 
   // --- HARDWARE E IOT ---
   {
@@ -541,6 +709,22 @@ export const techStackData = [
       <path d="M6 12H9M15 12H18M16.5 10.5V13.5" stroke="#00979D" stroke-width="1.8" stroke-linecap="round"/>
     </svg>`
   },
+  {
+    id: 'impresion-3d',
+    name: 'Impresión 3D',
+    category: 'hardware',
+    categoryLabel: 'Hardware & IoT',
+    badge: 'Prototipado & Carcasas',
+    desc: 'Diseño, modelado y manufactura aditiva de carcasas, piezas a medida y gabinetes para dispositivos y sensores IoT.',
+    color: '#F97316',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#241408"/>
+      <path d="M12 3L14 7H10L12 3Z" fill="#F97316"/>
+      <path d="M12 7V10" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 12L17.5 15V19.5L12 22.5L6.5 19.5V15L12 12Z" stroke="#FB923C" stroke-width="1.8" fill="none"/>
+      <path d="M12 12V22.5M6.5 15L12 18M17.5 15L12 18" stroke="#FDBA74" stroke-width="1.2"/>
+    </svg>`
+  },
 
   // --- DISEÑO Y CREATIVIDAD ---
   {
@@ -582,6 +766,21 @@ export const techStackData = [
     svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
       <circle cx="12" cy="12" r="10" fill="#BD081C"/>
       <path d="M12 4.5C7.86 4.5 4.5 7.86 4.5 12C4.5 15.17 6.47 17.89 9.27 19C9.21 18.4 9.16 17.48 9.3 16.89L10.23 12.94C10.23 12.94 9.99 12.46 9.99 11.75C9.99 10.64 10.63 9.81 11.43 9.81C12.11 9.81 12.44 10.32 12.44 10.93C12.44 11.62 12 12.65 11.78 13.58C11.59 14.38 12.18 15.03 12.97 15.03C14.4 15.03 15.5 13.52 15.5 11.36C15.5 9.45 14.13 8.11 12.16 8.11C9.88 8.11 8.55 9.82 8.55 11.72C8.55 12.41 8.81 13.15 9.14 13.55C9.21 13.63 9.22 13.7 9.2 13.79L8.85 15.22C8.79 15.46 8.65 15.52 8.41 15.41C6.82 14.67 5.84 12.38 5.84 10.55C5.84 7.64 7.95 5 12.28 5C15.77 5 18.48 7.49 18.48 10.82C18.48 14.28 16.3 17.09 13.27 17.09C12.26 17.09 11.31 16.56 10.98 15.93L10.43 18.03C10.23 18.8 9.69 19.76 9.3 20.38C10.15 20.64 11.06 20.78 12 20.78C16.84 20.78 20.78 16.84 20.78 12C20.78 7.16 16.84 4.5 12 4.5Z" fill="white"/>
+    </svg>`
+  },
+  {
+    id: 'capcut',
+    name: 'CapCut',
+    category: 'diseno',
+    categoryLabel: 'Diseño & Creatividad',
+    badge: 'Edición de Video & IA',
+    desc: 'Edición audiovisual dinámica, subtitulado automático inteligente y producción de contenido vertical para redes.',
+    color: '#00F0FF',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#0E121A"/>
+      <path d="M5.5 8.5C5.5 6.567 7.067 5 9 5L15 5C16.933 5 18.5 6.567 18.5 8.5C18.5 10.433 16.933 12 15 12L9 12C7.067 12 5.5 10.433 5.5 8.5Z" stroke="#00F0FF" stroke-width="1.8" fill="none"/>
+      <path d="M5.5 15.5C5.5 13.567 7.067 12 9 12L15 12C16.933 12 18.5 13.567 18.5 15.5C18.5 17.433 16.933 19 15 19L9 19C7.067 19 5.5 17.433 5.5 15.5Z" stroke="#FF2E93" stroke-width="1.8" fill="none"/>
+      <path d="M8 8.5L16 15.5M8 15.5L16 8.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
     </svg>`
   }
 ];
