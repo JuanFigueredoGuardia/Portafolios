@@ -659,6 +659,23 @@ export const techStackData = [
       <path d="M12 3V21M12 3L8 14L12 21M12 3L16 14L12 21" stroke="#C4B5FD" stroke-width="1.2"/>
     </svg>`
   },
+  {
+    id: 'tally',
+    name: 'Tally',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Formularios & Captación',
+    desc: 'Creación de formularios dinámicos interactivos, captación de leads y conexión fluida mediante webhooks a n8n y Google Sheets.',
+    color: '#FF5A5F',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#18181B"/>
+      <path d="M6 5V19" stroke="#FF5A5F" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M10 5V19" stroke="#FF5A5F" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M14 5V19" stroke="#FF5A5F" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M18 5V19" stroke="#FF5A5F" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M4 16L20 8" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>`
+  },
 
   // --- HARDWARE E IOT ---
   {
