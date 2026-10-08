@@ -799,5 +799,22 @@ export const techStackData = [
       <path d="M5.5 15.5C5.5 13.567 7.067 12 9 12L15 12C16.933 12 18.5 13.567 18.5 15.5C18.5 17.433 16.933 19 15 19L9 19C7.067 19 5.5 17.433 5.5 15.5Z" stroke="#FF2E93" stroke-width="1.8" fill="none"/>
       <path d="M8 8.5L16 15.5M8 15.5L16 8.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
     </svg>`
+  },
+  {
+    id: 'drawio',
+    name: 'draw.io',
+    category: 'diseno',
+    categoryLabel: 'Diseño & Creatividad',
+    badge: 'Diagramas & Arquitectura',
+    desc: 'Modelado visual de arquitecturas de software, diagramas de flujo de procesos, esquemas de bases de datos y mapas conceptuales.',
+    color: '#F08705',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#1C1814"/>
+      <rect x="4" y="4" width="7" height="7" rx="1.5" fill="#F08705"/>
+      <rect x="13" y="13" width="7" height="7" rx="1.5" fill="#F08705"/>
+      <path d="M11 7.5H16.5V13" stroke="#F08705" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="16.5" cy="13" r="1.5" fill="#FFFFFF"/>
+      <circle cx="11" cy="7.5" r="1.5" fill="#FFFFFF"/>
+    </svg>`
   }
 ];
