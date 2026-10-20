@@ -433,6 +433,21 @@ export const techStackData = [
       <circle cx="15.5" cy="9.5" r="1.5" fill="#FBBF24"/>
     </svg>`
   },
+  {
+    id: 'ollama',
+    name: 'Ollama',
+    category: 'ia',
+    categoryLabel: 'Inteligencia Artificial',
+    badge: 'LLMs Locales & Privados',
+    desc: 'Despliegue y ejecución local de grandes modelos de lenguaje (Llama, Mistral, DeepSeek), inferencia privada y conexión a APIs vía REST.',
+    color: '#0F172A',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#0F172A"/>
+      <path d="M8.5 4V6H7.5C6.67 6 6 6.67 6 7.5V10C6 10.83 6.67 11.5 7.5 11.5H8V15.5C8 16.33 8.67 17 9.5 17H10V18.5C10 19.33 10.67 20 11.5 20H12.5C13.33 20 14 19.33 14 18.5V17H15V18.5C15 19.33 15.67 20 16.5 20H17.5C18.33 20 19 19.33 19 18.5V14C19 12.34 17.66 11 16 11H13V6C13 4.9 12.1 4 11 4H10.5V3C10.5 2.45 10.05 2 9.5 2C8.95 2 8.5 2.45 8.5 3V4Z" fill="#FFFFFF"/>
+      <circle cx="8" cy="8.5" r="1" fill="#0F172A"/>
+      <path d="M9 2.5V4M12 2.5V4" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>`
+  },
 
   // --- AUTOMATIZACIÓN Y DATOS ---
   {
