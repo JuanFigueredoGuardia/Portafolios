@@ -1042,6 +1042,140 @@ section {
     color: var(--main-color);
 }
 
+/* --- CASO DE ESTUDIO ESTANDARIZADO DE PROYECTOS (GEO & SEO) --- */
+.project-case-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 1.8rem;
+    background: var(--bg-secondary);
+    border-radius: 1.4rem;
+    border: 1px solid var(--border-light);
+}
+
+.project-detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 1.35rem;
+    line-height: 1.55;
+}
+
+.project-detail-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.project-detail-value {
+    color: var(--text-secondary);
+}
+
+.project-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.3rem;
+}
+
+.project-tech-tags span {
+    font-size: 1.15rem;
+    font-weight: 600;
+    background: rgba(0, 74, 173, 0.07);
+    color: var(--main-color);
+    padding: 0.35rem 0.9rem;
+    border-radius: 0.6rem;
+    border: 1px solid rgba(0, 74, 173, 0.15);
+}
+
+/* --- MEJORAS EN TARJETAS DE PRECIOS & SERVICIOS --- */
+.pricing-price-wrap {
+    margin: 1.8rem 0 1.2rem;
+    text-align: center;
+}
+
+.pricing-amount {
+    font-size: 3.8rem;
+    font-weight: 800;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-primary);
+    line-height: 1.1;
+}
+
+.pricing-currency {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-top: 0.4rem;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pricing-intl-note {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-top: 0.3rem;
+    display: block;
+}
+
+.pricing-features-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin: 1.8rem 0 1rem;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.pricing-box ul.pricing-checklist {
+    list-style: none;
+    margin-bottom: 2.8rem;
+    flex-grow: 1;
+}
+
+.pricing-box ul.pricing-checklist li {
+    font-size: 1.45rem;
+    color: var(--text-secondary);
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    line-height: 1.45;
+    justify-content: flex-start;
+}
+
+.pricing-box ul.pricing-checklist li i {
+    color: #10B981;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+}
+
+.service-price-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--main-color);
+    background: rgba(0, 74, 173, 0.06);
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: 1.2rem;
+    border: 1px solid rgba(0, 74, 173, 0.12);
+}
+
 /* --- SECCIÓN PLANES Y PRECIOS --- */
 .pricing {
     background: var(--bg-primary);
