@@ -233,6 +233,19 @@ export const techStackData = [
       <path d="M3.2 12C3.2 15.65 5.4 18.78 8.54 20.08L4.65 9.42C3.73 10.2 3.2 11.05 3.2 12ZM17.15 11.53C17.15 10.3 16.71 9.45 16.34 8.81C15.85 8 15.38 7.34 15.38 6.55C15.38 5.66 16.05 4.86 17 4.86C17.14 4.86 17.27 4.88 17.4 4.9C15.93 3.72 14.05 3 12 3C9.72 3 7.64 3.89 6.13 5.34C6.46 5.36 6.88 5.38 7.33 5.38C8.36 5.38 9.94 5.25 9.94 5.25C10.47 5.22 10.53 5.97 10 6.03C10 6.03 9.47 6.09 8.94 6.12L12.18 15.75L14.13 9.9L12.75 6.12C12.22 6.09 11.71 6.03 11.71 6.03C11.18 5.97 11.24 5.22 11.77 5.25C11.77 5.25 13.38 5.38 14.38 5.38C15.38 5.38 16.97 5.25 16.97 5.25C17.5 5.22 17.56 5.97 17.03 6.03C17.03 6.03 16.5 6.09 15.97 6.12L19.18 15.68L20.06 12.7C20.47 11.28 20.8 9.9 20.8 8.81C20.8 8.44 20.76 8.08 20.7 7.74C21.39 8.98 21.8 10.45 21.8 12C21.8 14.88 20.36 17.43 18.17 18.98L13.56 6.17L17.15 11.53Z" fill="white"/>
     </svg>`
   },
+  {
+    id: 'vercel',
+    name: 'Vercel',
+    category: 'entornos',
+    categoryLabel: 'Entornos & Deploy',
+    badge: 'Cloud & Deploy Frontend',
+    desc: 'Despliegue ágil en la nube para aplicaciones web modernas, funciones serverless y rendimiento perimetral (Edge).',
+    color: '#000000',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#0A0A0A"/>
+      <path d="M12 4L20 18H4L12 4Z" fill="#FFFFFF"/>
+    </svg>`
+  },
 
   // --- INTELIGENCIA ARTIFICIAL Y MODELOS ---
   {
@@ -481,8 +494,8 @@ export const techStackData = [
     </svg>`
   },
   {
-    id: 'maker',
-    name: 'Maker (Make)',
+    id: 'make',
+    name: 'Make',
     category: 'automatizacion',
     categoryLabel: 'Automatización & Datos',
     badge: 'No-Code Integrations',
@@ -689,6 +702,20 @@ export const techStackData = [
       <path d="M14 5V19" stroke="#FF5A5F" stroke-width="2.2" stroke-linecap="round"/>
       <path d="M18 5V19" stroke="#FF5A5F" stroke-width="2.2" stroke-linecap="round"/>
       <path d="M4 16L20 8" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+    </svg>`
+  },
+  {
+    id: 'notion',
+    name: 'Notion',
+    category: 'automatizacion',
+    categoryLabel: 'Automatización & Datos',
+    badge: 'Gestión & Documentación',
+    desc: 'Organización integral de proyectos, bases de datos relacionales, documentación colaborativa y flujos de trabajo estructurados.',
+    color: '#000000',
+    svg: `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+      <rect width="24" height="24" rx="5" fill="#18181B"/>
+      <path d="M4.5 5.5L7.5 5L17.5 3.5C18.5 3.5 19 4 19 5V18.5L14.5 20.5L6.5 20C5.5 20 5 19.5 5 18.5V5.5" stroke="#FFFFFF" stroke-width="1.6" fill="none"/>
+      <path d="M8 8V17M8 8L15 17M15 6V15" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>`
   },
 
